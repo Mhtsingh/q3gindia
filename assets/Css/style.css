@@ -749,6 +749,7 @@ p{
 }
 
 .why-img-wrap img{
+  padding-top: 76px;
   width: 100%;
 }
 @media (max-width: 992px) {
