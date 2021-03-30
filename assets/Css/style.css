@@ -674,7 +674,7 @@
 }
 
 .why-btn{
-  margin-top: 40px;
+  margin-top: 30px;
   background: #07659D;
   border-radius: 6px;
   color: #fff;
@@ -1054,7 +1054,7 @@
 .why-img-wrap img{
   padding-top: 76px;
   width: 100%;
-  height: 80%;
+  /* height: 80%; */
 }
 @media (max-width: 992px) {
   .why-img-wrap {
