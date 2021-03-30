@@ -177,10 +177,11 @@
   font-size: 58px;
   font-weight: 400;
   letter-spacing: 2px;
+  white-space: nowrap;
 }
 .page-hero-section h1 {
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 30px;
 }
 .page-hero-section h1 span {
   /* margin-bottom: -20px; */
@@ -200,6 +201,7 @@
   color: #F68C1E;
   font-size: 61px;
   font-weight: 900;
+  white-space: nowrap;
 }
 
 .hr-element{
@@ -310,7 +312,11 @@
 
 @media only screen and (max-width: 768px) {
   .hero_head {
-    animation: none;
+    white-space: normal;
+  }
+  .page-hero-section h2{
+    white-space: normal;
+  
   }
   .rounded-btn {
     display: none;
@@ -513,6 +519,9 @@
   animation: card3animation 10s infinite;
 
 }
+.card3 h2{
+  white-space: normal;
+}
 .card3 p {
   position: relative;
   padding: 0 10px 0 10px;
@@ -559,7 +568,8 @@
   padding: 0 15px 0 15px;
 }
 .left-col img {
-  padding-left: 70px;
+  width: 75%;
+  /* padding-left: 70px; */
   height: 100%;
 }
 .right-col {
@@ -590,9 +600,9 @@
   text-align: justify;
 }
 @media (max-width: 992px) {
- .left-col{
+ /* .left-col{
    display: none;
- }
+ } */
 }
 /*************/
 /*************/
@@ -747,10 +757,6 @@
   line-height: 45px;
  }
 
-.item1:hover {
-  border-color: #ffb703;
-  box-shadow: none;
-}
 .fa-paint-roller{
   color: #ffb703;
   font-size: 40px;
@@ -759,10 +765,7 @@
   padding: 43px 0;
 }
 
-.item2:hover {
-  border-color: #07659D;
-  box-shadow: none;
-}
+
 .fa-file-code{
   color: #07659D;
   font-size: 40px;
@@ -771,10 +774,7 @@
   padding: 43px 0;
 }
 
-.item3:hover {
-  border-color: #53A03C;
-  box-shadow: none;
-}
+
 .fa-mobile-alt{
   color: #53A03C;
   font-size: 40px;
@@ -783,10 +783,7 @@
   padding: 43px 0;
 }
 
-.item4:hover {
-  border-color: #219EBC;
-  box-shadow: none;
-}
+
 .fa-bullhorn{
   color: #219EBC;
   font-size: 40px;
@@ -795,10 +792,6 @@
   padding: 43px 0;
 }
 
-.item5:hover {
-  border-color: #fb8500;
-  box-shadow: none;
-}
 .fa-business-time{
   color: #fb8500;
   font-size: 40px;
@@ -807,10 +800,6 @@
   padding: 43px 0;
 }
 
-.item6:hover {
-  border-color: #219ebc;
-  box-shadow: none;
-}
 .fa-briefcase{
   color: #219ebc;
   font-size: 40px;
