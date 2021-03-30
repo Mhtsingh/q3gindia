@@ -1,6 +1,11 @@
 *{
   font-family: 'Raleway', sans-serif;
 }
+/* body { 
+	max-width: auto; 
+	margin: 0 auto !important; 
+	float: none !important; 
+} */
 .hLine {
   display: inline-block;
   height: 5px;
@@ -59,7 +64,7 @@
 }
 
 .top-bar .text h2 {
-  color: #eeeeee;
+  color: #ffffff;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
@@ -142,10 +147,11 @@
   color: #000;
 }
 
-.nav-item a:active{
+.active{
   font-weight: bold;
-    color: #07659D ;
-    border-bottom:0.2rem solid #07659D ;
+  color: #07659D !important;
+  border-bottom: 5px solid #07659D;
+  padding-bottom: 5px;
 }
 
 .me-auto{
@@ -160,7 +166,7 @@
 .page-hero-section {
   position: relative;
   height: 100%;
-  background-image: url(../Images/hero-bg.jpg);
+  background-image: url(../Images/Banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -611,16 +617,16 @@
 
 .serv-item {
   position: relative;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   padding: 15px 0 10px 0;
   text-align: center;
-  background: #ffffff;
-  border: 2px solid transparent;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
+  /* background: #ffffff; */
+  /* border: 2px solid transparent; */
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
+  /* transition: 0.3s; */
   border-radius: 5px;
   /* width: 85%; */
-  height: 90%;
+  height: 86%;
 }
 .serv-item p{
   color: gray;
@@ -675,31 +681,37 @@
   padding: 43px 0;
 }
 .item1 p{
+  font-size: 14px;
   color: #fff;
   text-align: justify;
   padding: 0 24px;
 }
 .item2 p{
+  font-size: 14px;
   color: #fff;
   text-align: justify;
   padding: 0 24px;
 }
 .item3 p{
+  font-size: 14px;
   color: #fff;
   text-align: justify;
   padding: 0 24px;
 }
 .item4 p{
+  font-size: 14px;
   color: #fff;
   text-align: justify;
   padding: 0 24px;
 }
 .item5 p{
+  font-size: 14px;
   color: #fff;
   text-align: justify;
   padding: 0 24px;
 }
 .item6 p{
+  font-size: 14px;
   color: #fff;
   text-align: justify;
   padding: 0 24px;
@@ -964,9 +976,9 @@
   padding-left: 40px;
 }
 @media (max-width: 992px) {
-  .serv-right-col{
+  /* .serv-right-col{
     display: none;
-  }
+  } */
  }
 
  @media (max-width:768px){

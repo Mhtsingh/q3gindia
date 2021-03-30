@@ -72,9 +72,9 @@
             <span class="navbar-toggler-icon"><img src="assets/Images/meat.png"/></span>
           </button>
           <div class="collapse navbar-collapse nav-content" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="headDiv">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -161,7 +161,7 @@
           <div class="col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="fact-item card3">
               <h2>
-                <i class="fas fa-user-friends"></i>&emsp; Expert and Professional
+                <i class="fas fa-user-friends"></i>&nbsp; Expert and Professional
               </h2>
               <p>
                 Lorem ipsum dolor sit amet ame
@@ -194,15 +194,6 @@
             Q3G India is a leading provider of software development and business
             management solutions. Q3G India can develop customized development
             and business solutions that meet our client’s highest standards.
-            <!-- Whether it is web development or mobile application development or
-            both, Q3G India is the premier choice for you. We don’t take a one
-            size fits all approach when working with our clients. Instead we
-            allow our clients to guide us thus allowing us to deliver a final
-            product that not only meets but exceeds our client’s expectations.
-            Q3G India's management team is comprised of professionals with
-            decades of experience representing clients of virtually all sizes
-            and across many industries. We look forward to the prospect of
-            working with you! -->
           </p>
           <br />
           <a to="/contact" class="rounded-btn4 mb-2">HIRE US </a>
@@ -216,7 +207,7 @@
 
     <div class="container-fluid mt-5">
       <div class="row align-items-center" style="padding-left: 20px">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 serv-left-side">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-12 serv-left-side">
           <div class="hLine"></div>
           <h3>Industry Segment <span>We Serve</span></h3>
           <p>
@@ -230,9 +221,10 @@
           <p>
             Q3G India is known for its ability to turn the visions of the clients into reality! The methodology is simple- We understand your goals and the demands of your customers and provide you with the best solutions. Moreover, our specialty is that we blend creativity with reality in the best possible manner to avoid any kinds of uncertain events in the future.
           </p>
+          <br>
           <a to="/contact" class="serv-rounded-btn mt-3 mb-2"> SEE ALL SERVICES </a>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 pt-2 serv-card-wrap">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-12 pt-2 serv-card-wrap">
           <div class="row justify-content-center">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 serv-block-right">
               <div class="serv-item item1" style="background-color: #053C5E;color: #fff">
@@ -279,9 +271,10 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 serv-block-right">
-              <div class="serv-item item5"  style="background-color: #FFB703; color: #fff">
+              <div class="serv-item item5"  style="background-color: #FB8500; color: #fff">
                 <i><img src="/assets/Images/Taxi_5.svg"/></i>
-                <h6>Ride App (Uber/Ola/Lyft Like)</h6>
+                <h6>Ride App </h6>
+                <!-- <p>(Uber/Ola/Lyft Like)</p> -->
                 <p>
                   Lorem ipsum dolor sit amet ame consecte tur adipisicing there.
                   Ipsa libero abser
@@ -595,17 +588,18 @@
     </div>
     <!-- Footer End -->
     <!-- JavaScript Bundle with Popper -->
-   <!-- <script type="text/javascript">
-  
-    const currentLocation = location.href;
-    const menuItem = document.querySelectorAll('a');
-    const menuLength = menuItem.length;
-    for (let i = 0; i<menuLength; i++){
-      if(menuItem[i].href === currentLocation){
-        menuItem[i].className = "active"
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("headDiv");
+      var btns = header.getElementsByClassName("nav-link");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
       }
-    }
-  </script> -->
+      </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
