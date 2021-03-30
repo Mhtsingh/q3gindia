@@ -1054,6 +1054,7 @@
 .why-img-wrap img{
   padding-top: 76px;
   width: 100%;
+  height: 80%;
 }
 @media (max-width: 992px) {
   .why-img-wrap {
