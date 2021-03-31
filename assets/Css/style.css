@@ -1,11 +1,9 @@
 *{
   font-family: 'Raleway', sans-serif;
 }
-/* body { 
-	max-width: auto; 
-	margin: 0 auto !important; 
-	float: none !important; 
-} */
+body { 
+  overflow-x: hidden;
+}
 .hLine {
   display: inline-block;
   height: 5px;
@@ -163,9 +161,6 @@
 .form-popup {
   display: none;
   position: fixed;
-  /* bottom: 0; */
-  /* left: 50%; */
-  /* right: 50%; */
   width: 50%;
   top: 10%;
   /* margin-top: 45%;  */
@@ -218,6 +213,13 @@
 display: none;
 }
 .d-flex{display: none !important;}
+.form-popup {
+  position: fixed;
+  width: 100%;
+  /* margin-top: 45%;  */
+  margin-left: 0%;
+  
+}
 }
 
 /* ********************** */
