@@ -3,6 +3,7 @@
 }
 body { 
   overflow-x: hidden;
+   
 }
 .hLine {
   display: inline-block;
@@ -109,6 +110,16 @@ body {
   background: #F08104;
   color: #fff;
   font-weight: bold;
+  border: 2px solid #F08104;
+
+}
+.top-bar-btn:hover{
+  padding: 11px 39px;
+  font-size: 18px;
+  background: #fff;
+  color: #F08104;
+  font-weight: bold;
+  border: 2px solid #F08104;
 }
 
 @media (max-width: 786px)
@@ -175,7 +186,17 @@ body {
   padding: 10px;
   background-color: white;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 /* Full-width input fields */
 /* .form-container input[type=text], .form-container input[type=password] {
   width: 100%;
@@ -208,6 +229,7 @@ body {
 .me-auto{
   margin-left: auto;
 }
+
 @media (max-width: 1000px){
 .active{
 display: none;
@@ -273,7 +295,6 @@ display: none;
   padding-bottom: 15px;
   border-top: 2px dashed white;
   letter-spacing: 2px;
-
 }
 
 /* @keyframes heading{
@@ -1204,6 +1225,9 @@ display: none;
   .why-div-wrap h3{
     font-size: 30px;
     letter-spacing: 2px;
+  }
+  .why-text-bullet p{
+    padding-left: 15px;
   }
  }
 

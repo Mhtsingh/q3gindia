@@ -103,43 +103,36 @@
             </button>   
      
           </div>
-          <div class="form-popup" id="myForm">
+          <div class="form-popup" id="myForm" >
             <form action="" class="form-container">
               <div class="form-row">
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-12 col-12">
                   <label for="inputPassword4">Name</label>
-                  <input type="name" class="form-control" id="inputPassword4" placeholder="Name" required>
+                  <input type="text" class="form-control" id="name" placeholder="Name" required>
                 </div>
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-12 col-12">
                   <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                  <input type="email" class="form-control" id="email" placeholder="Email" required>
                 </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-12 col-12" style="display:inline-grid;">
                   <label for="inputPassword4">Contact Number</label>
-                  <input type="name" class="form-control" id="contact" placeholder="Number" required>
+                  <input type="number" class="form-control" id="contact" placeholder="Number" max="15" required>
                 </div>
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-12 col-12">
                   <label for="inputEmail4">Subject</label>
                   <input type="email" class="form-control" id="subject" placeholder="Subject" required>
                 </div>
               </div>
-          
-              <!-- <label for="contact"><b>Contact Number</b></label>
-              <input type="password" placeholder="Enter Number" name="contact" required>
-             
-              <label for="subject"><b>Subject</b></label>
-              <input type="text" placeholder="Subject" name="subject" required>
-       -->
               <div class="form-group mb-2">
                 <label for="exampleFormControlTextarea1">Message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-      
-              <button type="submit" class="col-lg-6 col-md-6 col-6 btn">Submit</button>
-              <button type="button" class="col-lg-6 col-md-6 col-6 btn cancel" onclick="closeForm()">Close</button>
-  
+              <!-- <div class="row"> -->
+              <button type="submit" class="col-lg-4 col-md-4 col-4 btn">Submit</button>
+              <button type="button" class="col-lg-4 col-md-4 col-4 btn cancel" onclick="closeForm()">Close</button>
+            <!-- </div> -->
             </form>
           </div>
         </div>
@@ -245,6 +238,7 @@
             and business solutions that meet our client’s highest standards.
           </p>
           <br />
+        
           <a to="/contact" class="rounded-btn4 mb-2" onclick="openForm()">HIRE US </a>
           <a to="/about" class="rounded-btn3 mb-2">READ MORE </a>
         </div>
@@ -691,9 +685,9 @@
   document.getElementById("myForm").style.display = "none";
   }
 
-  const phoneInputField = document.querySelector("#phone");
+  const phoneInputField = document.querySelector("#contact");
    const phoneInput = window.intlTelInput(phoneInputField, {
-     utilsScript:
+    utilsScript:
        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
    });
 
