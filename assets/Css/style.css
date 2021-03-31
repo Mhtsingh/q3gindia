@@ -270,6 +270,7 @@ display: none;
 }
 
 .hr-element{
+  padding-bottom: 15px;
   border-top: 2px dashed white;
   letter-spacing: 2px;
 
