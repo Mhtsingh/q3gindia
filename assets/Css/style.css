@@ -160,6 +160,56 @@
   padding-bottom: 5px;
 }
 
+.form-popup {
+  display: none;
+  position: fixed;
+  /* bottom: 0; */
+  /* left: 50%; */
+  /* right: 50%; */
+  width: 50%;
+  top: 10%;
+  /* margin-top: 45%;  */
+  margin-left: 30%;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px 1px #b9b9b9;
+  border: 3px solid #000;
+  z-index: 9;
+}
+.form-container {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+/* .form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+} */
+.form-container .btn {
+  background-color: #F08104;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .cancel {
+  background-color: #07659D;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 .me-auto{
   margin-left: auto;
 }
@@ -1053,6 +1103,45 @@ display: none;
   height:450px;
   width: 75%;
   padding-left: 30px;
+}
+.core-list li{
+  padding-bottom: 1rem;
+}
+
+.core-list1{
+  font-size: 20px;
+  font-weight: 600;
+  list-style: none;
+  background: url(/assets/Images/Vector.png) no-repeat;
+  padding-left: 2rem;
+}
+.core-list2{
+  font-size: 20px;
+  font-weight: 600;
+  list-style: none;
+  background: url(/assets/Images/Vector1.png) no-repeat;
+  padding-left: 2rem;
+}
+.core-list3{
+  font-size: 20px;
+  font-weight: 600;
+  list-style: none;
+  background: url(/assets/Images/Vector2.png) no-repeat;
+  padding-left: 2rem;
+}
+.core-list4{
+  font-size: 20px;
+  font-weight: 600;
+  list-style: none;
+  background: url(/assets/Images/Vector3.png) no-repeat;
+  padding-left: 2rem;
+}
+.core-list5{
+  font-size: 20px;
+  font-weight: 600;
+  list-style: none;
+  background: url(/assets/Images/Vector4.png) no-repeat;
+  padding-left: 2rem;
 }
 @media (max-width: 992px) {
   .core-left-col{
