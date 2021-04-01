@@ -27,6 +27,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
     <link href="assets/Css/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -80,10 +81,10 @@
           <div class="collapse navbar-collapse nav-content" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="headDiv">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Services</a>
@@ -98,43 +99,99 @@
             <!-- <form class="">
                        
             </form> -->
-            <button class="btn top-bar-btn d-flex" onclick="openForm()" >
+            <button class="btn top-bar-btn d-flex " id="myBtn" onclick="openForm()" >
               Let's talk
-            </button>   
-     
+            </button>               
           </div>
-          <div class="form-popup" id="myForm" >
-            <form action="" class="form-container">
-              <div class="form-row">
-                <div class="form-group col-md-12 col-12">
-                  <label for="inputPassword4">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Name" required>
+          <div id="myModal" class="form-popup">
+            <div class="modal-content">
+            <span class="popupCloseButton">&times;</span>
+              <form action="" class="form-container ">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="assets/Images/mail.jpg"/>
+                  </div>
+                  <div class="col-6 form-input-wrapper">
+                    <h2>Contact US</h2>
+                    <p>Feel Free to contact Us. We will get back to you ASAP!
+                    </p>
+                    <div class="row">
+                      <div class="form-group col-md-6 col-6">
+                        <label for="inputPassword4">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                      </div>
+                      <div class="form-group col-md-6 col-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-md-6 col-6" style="display:inline-grid;">
+                        <label for="inputPassword4">Contact Number</label>
+                        <input type="number" class="form-control" id="contact" placeholder="Number" min="5" required>
+                      </div>
+                      <div class="form-group col-md-6 col-6">
+                        <label for="inputEmail4">Subject</label>
+                        <select class="form-select" aria-label="Default select example" style="height: 50px;" required>
+                          <option selected disabled>Subject</option>
+                          <option value="1">Development</option>
+                          <option value="2">consultancy</option>
+                          <option value="3">Marketing</option>
+                        </select>
+                        <!-- <input type="email" class="form-control" id="subject" placeholder="Subject" required> -->
+                      </div>
+                    </div>
+                    <div class="form-group pb-4">
+                      <label for="exampleFormControlTextarea1">Message</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="col-lg-4 col-md-4 col-4 btn">Submit</button>
+  
+                  </div>
                 </div>
-                <div class="form-group col-md-12 col-12">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email" required>
+              </form>
+            </div>
+          
+          </div>
+          <!-- <div class="form-popup" id="myForm">
+            <div class="popupCloseButton" onclick="closeForm()">&times;</div>
+            <form action="" class="form-container ">
+              <div class="row">
+                <div class="col-6 form-input-wrapper">
+                  <h2>Contact US</h2>
+                  <p>Feel Free to contact Us. We will get back to you ASAP!
+                  </p>
+                  <div class="form-row">
+                    <div class="form-group col-md-12 col-12">
+                      <label for="inputPassword4">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group col-md-12 col-12">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-12 col-12" style="display:inline-grid;">
+                      <label for="inputPassword4">Contact Number</label>
+                      <input type="number" class="form-control" id="contact" placeholder="Number" max="15" required>
+                    </div>
+                    <div class="form-group col-md-12 col-12">
+                      <label for="inputEmail4">Subject</label>
+                      <input type="email" class="form-control" id="subject" placeholder="Subject" required>
+                    </div>
+                  </div>
+                  <div class="form-group mb-2">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="col-lg-4 col-md-4 col-4 btn">Submit</button>
+
                 </div>
               </div>
-              <div class="form-row">
-                <div class="form-group col-md-12 col-12" style="display:inline-grid;">
-                  <label for="inputPassword4">Contact Number</label>
-                  <input type="number" class="form-control" id="contact" placeholder="Number" max="15" required>
-                </div>
-                <div class="form-group col-md-12 col-12">
-                  <label for="inputEmail4">Subject</label>
-                  <input type="email" class="form-control" id="subject" placeholder="Subject" required>
-                </div>
-              </div>
-              <div class="form-group mb-2">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <!-- <div class="row"> -->
-              <button type="submit" class="col-lg-4 col-md-4 col-4 btn">Submit</button>
-              <button type="button" class="col-lg-4 col-md-4 col-4 btn cancel" onclick="closeForm()">Close</button>
-            <!-- </div> -->
             </form>
-          </div>
+          </div> -->
+
         </div>
       </nav>
      
@@ -238,8 +295,12 @@
             and business solutions that meet our client’s highest standards.
           </p>
           <br />
-        
-          <a to="/contact" class="rounded-btn4 mb-2" onclick="openForm()">HIRE US </a>
+          <button class="btn rounded-btn4 mb-2" id="myBtn1" onclick="openForm()" >
+            HIRE US
+          </button>   
+          <button class="btn mobile-btn mb-2" id="myBtn1" onclick="openForm()" >
+            HIRE US
+          </button>   
           <a to="/about" class="rounded-btn3 mb-2">READ MORE </a>
         </div>
       </div>
@@ -514,56 +575,6 @@
       </div>
     </div>
     <!-- core value End -->
-    <!-- Process Section start -->
-    <!-- <div class="container-fluid container-wrap">
-      <div class="Process_wrap">
-            <h2>Our Working <span>Process</span></h2>
-          </div>
-          <div class="row">
-          <div class="col-md-12">
-              <div class="main-timeline">
-                  <div class="timeline">
-                      <div class="timeline-content">
-                          <div class="timeline-icon"><i class="fas fa-globe-europe"></i></div>
-                          <h3 class="title">Discover And Define</h3>
-                          <p class="description">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                          </p>
-                      </div>
-                  </div>
-                  <div class="timeline">
-                      <div class="timeline-content">
-                          <div class="timeline-icon"><i class="fas fa-pen-nib"></i></div>
-                          <h3 class="title">Interface And Interaction</h3>
-                          <p class="description">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                          </p>
-                      </div>
-                  </div>
-                  <div class="timeline">
-                      <div class="timeline-content">
-                          <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
-                          <h3 class="title">Code And Implementation</h3>
-                          <p class="description">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                          </p>
-                      </div>
-                  </div>
-                  <div class="timeline">
-                      <div class="timeline-content">
-                          <div class="timeline-icon"><i class="fas fa-space-shuttle"></i></div>
-                          <h3 class="title">Deploy And Use</h3>
-                          <p class="description">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-    Process Section End -->
     <!-- Why Us Section Start -->
 
     <div class="container-fluid mt-5 mb-5">
@@ -676,36 +687,58 @@
     </div>
     <!-- Footer End -->
     <!-- JavaScript Bundle with Popper -->
-    <script>
-  function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+    <!-- <script src="js/main.js"></script> -->
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+   // Get the button that opens the modal
+   var btn = document.getElementById("myBtn");
+   var btns = document.getElementById("myBtn1");
 
-  function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-  }
-
-  const phoneInputField = document.querySelector("#contact");
-   const phoneInput = window.intlTelInput(phoneInputField, {
-    utilsScript:
-       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   // Get the <span> element that closes the modal
+   var span = document.getElementsByClassName("popupCloseButton")[0];
+   // When the user clicks the button, open the modal 
+   btn.onclick = function() {
+     modal.style.display = "block";
+   }
+   btns.onclick = function() {
+     modal.style.display = "block";
+   }
+   // When the user clicks on <span> (x), close the modal
+   span.onclick = function() {
+     modal.style.display = "none";
+   }
+   // When the user clicks anywhere outside of the modal, close it
+   window.onclick = function(event) {
+     if (event.target == modal) {
+       modal.style.display = "none";
+     }
+   }
+</script>
+<script>
+   var header = document.getElementById("headDiv");
+ var btns = header.getElementsByClassName("nav-link");
+ for (var i = 0; i < btns.length; i++) {
+   btns[i].addEventListener("click", function () {
+     var current = document.getElementsByClassName("active");
+     current[0].className = current[0].className.replace(" active", "");
+     this.className += " active";
    });
-
-      // Add active class to the current button (highlight it)
-      var header = document.getElementById("headDiv");
-      var btns = header.getElementsByClassName("nav-link");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-        });
-      }
-      </script>
+  }
+</script>
+<script>
+  const phoneInputField = document.querySelector("#contact");
+  const phoneInput = window.intlTelInput(phoneInputField, {
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+  });
+</script>
+   
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>
