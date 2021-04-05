@@ -4,9 +4,9 @@ var header = document.getElementById("headDiv");
 var btns = header.getElementsByClassName("nav-link");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("activeLink");
+    current[0].className = current[0].className.replace("activeLink", "");
+    this.className += "activeLink";
   });
  }
 
@@ -50,13 +50,11 @@ function readMoreFunction1() {
   if (dots.style.display === "none") {
     dots.style.display = "inline";
     btnText1.innerHTML = "Read more"; 
-
     moreText1.style.display = "none"; 
 
   } else {
     dots.style.display = "none";
     btnText1.innerHTML = "Read less"; 
-  
     moreText1.style.display = "inline";
 
   }
@@ -64,43 +62,30 @@ function readMoreFunction1() {
 function readMoreFunction2() {
   var dots = document.getElementById("dots");
   var moreText2 = document.getElementById("more2");
- 
   var btnText2 = document.getElementById("ReadMoreBtn2");
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-  
     btnText2.innerHTML = "Read more"; 
-   
     moreText2.style.display = "none";
-   
 
   } else {
     dots.style.display = "none";
-   
     btnText2.innerHTML = "Read less"; 
-  
     moreText2.style.display = "inline";
   
   }
 }function readMoreFunction3() {
   var dots = document.getElementById("dots");
   var moreText3 = document.getElementById("more3");
-
   var btnText3 = document.getElementById("ReadMoreBtn3");
-
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    
     btnText3.innerHTML = "Read more"; 
-    
     moreText3.style.display = "none";
-
   } else {
     dots.style.display = "none";
-   
     btnText3.innerHTML = "Read less"; 
-   
     moreText3.style.display = "inline";
   }
 }
@@ -146,8 +131,8 @@ var btns = btnContainer.getElementsByClassName("Pbtn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("activeButton");
-    current[0].className = current[0].className.replace(" activeButton", "");
-    this.className += " active";
+    current[0].className = current[0].className.replace("activeButton", "");
+    this.className += "activeButton";
   });
 }
 

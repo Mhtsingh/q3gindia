@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q3G India</title>
+    <link rel="icon" href="assets/Images/logo.png">
 
     <link
     rel="stylesheet"
@@ -97,7 +98,7 @@
               <a class="nav-link" href="blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link activeLink" href="contact.html">Contact</a>
             </li>
           </ul>
           <button class="btn top-bar-btn d-flex " id="myBtn" onclick="openForm()" >
@@ -161,7 +162,7 @@
   </section>
   <div class="page-hero-section" >
     <div class="container-fluid">
-      <div class="bredacrum-field">
+      <div class="contact-bredacrum-field">
         <h2>Stay In Touch
         </h2>
       </div>
@@ -170,8 +171,8 @@
 
   <div class="Conatct-card-wrap mt-5 mb-5">
     <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
           <div class="contact-card">
             <div class="row">
               <div class="col-4">
@@ -180,16 +181,14 @@
               <div class="col-8">
                 <h2>Phone</h2>
                 <p>
-                   <img src="assets/Images/india.png"> +91-6280882955</img>  
+                   <img src="assets/Images/india.png"> +91-6280882955</img>  <br>
                    <img src="assets/Images/united-states.png"> +1-9169951115</img>         
                 </p>
               </div>
             </div>
-           
-            <div class="corner"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
           <div class="contact-card">
             <div class="row">
               <div class="col-4">
@@ -198,13 +197,13 @@
               <div class="col-8">
                 <h2>Email</h2>
                 <p>
-                  support@dharcorp.com      
+                  support@q3gindia.com      
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
           <div class="contact-card">
             <div class="row">
               <div class="col-4">
@@ -225,7 +224,7 @@
   </div>
 <!-- Form Start -->
 <div style="background-image: url(/assets/Images/contact/contactus.png);">
-  <div class="container pt-5 pb-5 mb-5">
+  <div class="container pt-5 pb-5">
     <div class="contact-form-wrapper">
       <div class="form-heading">
          <p>Free Consultation</p>
@@ -234,33 +233,30 @@
       </div>
         <div class="row">
           <div class="contact-group col-md-6 col-6">
-            <!-- <label for="inputPassword4">Name</label> -->
-            <input type="text" class="form-control" id="name" placeholder="Name" required>
+    <input type="text" class="form-control" id="name" placeholder="Name" style="height:50px;" required>
           </div>
           <div class="contact-group col-md-6 col-6">
-            <!-- <label for="inputEmail4">Email</label> -->
-            <input type="email" class="form-control" id="email" placeholder="Email" required>
+            <input type="email" class="form-control" id="email" placeholder="Email"  style="height:50px;" required>
           </div>
         </div>
         <div class="row">
-          <div class="contact-group col-md-6 col-6" style="display:inline-grid;">
-            <!-- <label for="inputPassword4">Contact Number</label> -->
-            <input type="number" class="form-control" id="contact" placeholder="Number" min="5" required>
-          </div>
           <div class="contact-group col-md-6 col-6">
-            <!-- <label for="inputEmail4">Subject</label> -->
             <select class="form-select" aria-label="Default select example" style="height: 50px; margin-top: 20px;" required>
-              <option selected disabled>Subject</option>
-              <option value="1">Development</option>
-              <option value="2">consultancy</option>
+              <option selected disabled>Product Type</option>
+              <option value="1">Website</option>
+              <option value="2">Mobile App</option>
               <option value="3">Marketing</option>
             </select>
-            <!-- <input type="email" class="form-control" id="subject" placeholder="Subject" required> -->
           </div>
+          <div class="contact-group col-md-6 col-6" style="display:inline-grid;">
+          
+            <input type="number" class="form-control" id="contact" placeholder="+91-999-99-99" min="5" style="height: 50px; margin-top: 20px;"required>
+          </div>
+         
         </div>
         <div class="form-group pb-4" style="margin-top: 20px;" >
-          <!-- <label for="exampleFormControlTextarea1">Message</label> -->
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="What’s in your mind...|"></textarea>
+         
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="What’s in your mind...|"></textarea>
         </div>
         <button type="submit" class="col-lg-4 col-md-4 col-4 btn">SEND MESSAGE</button>
 
@@ -270,7 +266,7 @@
 <!-- Form End -->
 
 <!-- Map Start -->
-<div id="googleMap" style="width:100%;height:400px;"></div>
+<!-- <div id="googleMap" style="width:100%;height:400px;"></div> -->
 
 <!-- Map End -->
 
