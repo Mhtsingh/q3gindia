@@ -129,9 +129,6 @@ body {
 }
 /* Top-navbar-end */
 
-/* ********************** */
-/* ********************** */
-
 /* Navbar */
 .navbar{
   background-color: #fff !important;
@@ -165,6 +162,7 @@ body {
   border-bottom: 5px solid #07659D;
   padding-bottom: 5px;
 }
+
 
 .form-popup {
   display: none; /* Hidden by default */
@@ -254,18 +252,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-/* Full-width input fields */
-/* .form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-} */
+
 .form-container .btn {
   background-color: #08589B;
   color: white;
@@ -304,9 +291,6 @@ border-bottom: none;
 }
 }
 
-/* ********************** */
-/* ********************** */
-/* ********************** */
 
 /* Hero Section */
 .page-hero-section {
@@ -497,9 +481,7 @@ border-bottom: none;
     width: 0;
   } */
 }
-/* ************* */
-/* ************* */
-/* ************* */
+
 /* Service card */
 
 .fact {
@@ -788,7 +770,7 @@ border-bottom: none;
 }
 .serv-left-side h3 span{
   color: #07659d;
-  font-weight: bold;
+  font-weight: 800;
 }
 .serv-left-side p{
  color: #000;
@@ -993,7 +975,7 @@ border-bottom: none;
 }
 .serv-left-col span{
   color: #2476A8;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .serv-left-col p{
@@ -2176,4 +2158,59 @@ padding: 16px 5px;
   font-size: 25px;
   
 }
+}
+/* **************************************** */
+
+
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
 }
