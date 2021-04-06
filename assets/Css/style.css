@@ -967,20 +967,19 @@ border-bottom: none;
   }
 }
 
-
-
 /* Services segment */
 .serv-left-col{
   padding-right: 76px;
-}
-.serv-left-col h2{
-  font-size: 40px;
 }
 .serv-left-col span{
   color: #2476A8;
   font-weight: 800;
 }
-
+.serv-left-col h2{
+  color: #000;
+  /* line-height: 2px; */
+  font-size: 40px;
+}
 .serv-left-col p{
   padding-bottom: 30px;
   font-size: 20px;
@@ -2040,12 +2039,11 @@ padding: 16px 5px;
   text-align: center;
   color: #ffffff;
 }
-.form-heading p{
-  font-size: 28px;
-}
+
 .form-heading h3{
   font-size: 46px;
   letter-spacing: 2px;
+  margin-bottom: 2rem;
 }
 .form-heading h3 span{
   font-weight: 700;

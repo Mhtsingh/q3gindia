@@ -17,7 +17,7 @@ for (var i = 0; i < btns.length; i++) {
    utilsScript:
      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
  });
-  
+  // ******************************************
 //  function _class(name){
 //   return document.getElementsByClassName(name);
 // }
@@ -37,7 +37,7 @@ for (var i = 0; i < btns.length; i++) {
 //   });
 // }
 
-
+// **************************************
 
 //  pop up form script
   var modal = document.getElementById("myModal");
