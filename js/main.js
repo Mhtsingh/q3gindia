@@ -1,15 +1,14 @@
 // Header active
 
-var header = document.getElementById("headDiv");
+ var header = document.getElementById("headDiv");
 var btns = header.getElementsByClassName("nav-link");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("activeLink");
-    current[0].className = current[0].className.replace("activeLink", "");
-    this.className += "activeLink";
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("activeLink");
+  current[0].className = current[0].className.replace(" activeLink", "");
+  this.className += " activeLink";
   });
- }
-
+}
 
 //Country code script  
   
@@ -19,6 +18,27 @@ for (var i = 0; i < btns.length; i++) {
      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
  });
   
+//  function _class(name){
+//   return document.getElementsByClassName(name);
+// }
+ 
+// let tabPanes = _class("tab-header")[0].getElementsByTagName("div");
+ 
+// for(let i=0;i<tabPanes.length;i++){
+//   tabPanes[i].addEventListener("click",function(){
+//     _class("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
+//     tabPanes[i].classList.add("active");
+    
+//     _class("tab-indicator")[0].style.top = `calc(80px + ${i*50}px)`;
+    
+//     _class("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
+//     _class("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");
+    
+//   });
+// }
+
+
+
 //  pop up form script
   var modal = document.getElementById("myModal");
   var btn = document.getElementById("myBtn");
@@ -27,9 +47,9 @@ for (var i = 0; i < btns.length; i++) {
   btn.onclick = function() {
     modal.style.display = "block";
   }
-  btns.onclick = function() {
-    modal.style.display = "block";
-  }
+  // btns.onclick = function() {
+  //   modal.style.display = "block";
+  // }
   span.onclick = function() {
     modal.style.display = "none";
   }
@@ -39,7 +59,50 @@ for (var i = 0; i < btns.length; i++) {
     }
   }
 
+// portfolio product script
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("productContainer");
+// var btns = header.getElementsByClassName("nav-link");
+
+var Pbtns = btnContainer.getElementsByClassName("Pbtn");
+for (var i = 0; i < Pbtns.length; i++) {
+  Pbtns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("activeButton");
+    current[0].className = current[0].className.replace("activeButton", "");
+    this.className += "activeButton";
+  });
+}
 
 // Read More Script
 function readMoreFunction1() {
@@ -90,51 +153,6 @@ function readMoreFunction2() {
   }
 }
 
-
-// portfolio product script
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("productContainer");
-var btns = btnContainer.getElementsByClassName("Pbtn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("activeButton");
-    current[0].className = current[0].className.replace("activeButton", "");
-    this.className += "activeButton";
-  });
-}
 
 
 
