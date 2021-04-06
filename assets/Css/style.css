@@ -973,6 +973,9 @@ border-bottom: none;
 .serv-left-col{
   padding-right: 76px;
 }
+.serv-left-col h2{
+  font-size: 40px;
+}
 .serv-left-col span{
   color: #2476A8;
   font-weight: 800;
