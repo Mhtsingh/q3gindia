@@ -967,15 +967,9 @@ border-bottom: none;
 
 .serv-item {
   position: relative;
-  /* margin-bottom: 15px; */
   padding: 15px 0 10px 0;
   text-align: center;
-  /* background: #ffffff; */
-  /* border: 2px solid transparent; */
-  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
-  /* transition: 0.3s; */
   border-radius: 5px;
-  /* width: 85%; */
   height: 86%;
 }
 .serv-item p{
@@ -2528,5 +2522,43 @@ margin-top: 5px;
 .all-service h2 span{
   font-weight: 800;
   color: #07659D;
+}
 
+.app-item{
+position: relative;
+padding: 15px 0 10px 0;
+text-align: center;
+border-radius: 5px;
+/* height: 86%; */
+}
+.app-item p{
+  text-align: start;
+  /* padding-left: 14%; */
+}
+.app-item li{
+  text-align: start;
+  padding-left: 14%;
+}
+
+.design-div p{
+  font-size: 23px;
+  font-weight:500;
+}
+
+.open-item h6{
+  font-size: 25px;
+}
+
+.open-item{
+  position: relative;
+padding: 15px 0 10px 0;
+text-align: center;
+border-radius: 5px;
+height: 86%;
+}
+.imag02{
+  padding: 0 20px 20px 20px;
+}
+.imag04{
+  padding: 20px;
 }
