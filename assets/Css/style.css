@@ -130,6 +130,96 @@ body {
 /* Top-navbar-end */
 
 /* Navbar */
+/* drop down menu */
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 4px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.drop-down ul {
+  display: block;
+  position: absolute;
+  top: calc(100% - 30px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
+}
+.drop-down a{
+  text-decoration: none;
+  color: #000;
+}
+
+.drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.drop-down li {
+  list-style: none;
+  min-width: 180px;
+  position: relative;
+}
+
+.drop-down ul a {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+  color: #000;
+}
+.drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+  color: #07659D;
+}
+
+.drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+.drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+}
+
+.drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+/* .drop-down .drop-down > a:after {
+  content: "\eaa0";
+  font-family: IcoFont;
+  position: absolute;
+  right: 15px;
+} */
+
+@media (max-width: 1366px) {
+  .nav-menu .drop-down .drop-down ul {
+    left: -90%;
+  }
+  .nav-menu .drop-down .drop-down:hover > ul {
+    left: -100%;
+  }
+  /* .nav-menu .drop-down .drop-down > a:after {
+    content: "\ea9d";
+  } */
+}
+
+/* drop down menu */
+
+
 .navbar{
   background-color: #fff !important;
   padding-top: 20px !important;
@@ -729,8 +819,9 @@ border-bottom: none;
   font-size: 45px;
 }
 .right-col h4 span{
+  color: #07659D;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .right-col p{
@@ -764,6 +855,100 @@ border-bottom: none;
 
 
 /* Serve Segment */
+.industry-segment h2{
+  font-size: 48px;
+  font-weight: 600;
+}
+.industry-segment h2 span{
+  color: #07659D;
+  font-weight: 800;
+}
+.industry-segment p{
+  font-size: 20px;
+  color: #000;
+}
+
+.tab {
+  /* float: left; */
+  /* width: 30%; */
+  /* height: 400px; */
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  padding: 20px 16px;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 15px;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.tab-btn1{
+  background:#07659D;
+   color: #fff;
+}
+.tab-btn2{
+  background:#FB8500;
+   color: #fff;
+}
+.tab-btn3{
+  background:#2EBF02;
+   color: #fff;
+}
+.tab-btn4{
+  background:#FFB703;
+   color: #fff;
+}
+.tab-btn5{
+  background:#FE4D63;
+   color: #fff;
+}
+.tab-btn6{
+  background:#DA48FF;
+   color: #fff;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  color: #000;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+/* Style the tab content */
+.tabcontent {
+  background: transparent;
+  float: left;
+  padding: 0px 12px;
+  border-radius: 15px;
+  border: 2px solid #07659D;
+  /* width: 68%; */
+  box-shadow: 0px 4px 13px rgba(128, 117, 117, 0.38);
+  margin-left: 2%;
+  height: 100%;
+}
+.tabcontent img {
+  padding-top: 20px;
+  padding-left:40px;
+}
+.tabcontent p{
+  text-align: justify;
+  font-size: 23px;
+  font-weight: 600;
+  padding: 30px 41px;
+}
+
+
+/* ************ */
 .serv-left-side h3{
   font-size: 40px;
   letter-spacing: 2px;
@@ -1116,8 +1301,9 @@ border-bottom: none;
   /* justify-content: center; */
 }
 .right-side p{
-  font-size: 18px;
-  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  /* text-align: center; */
   /* margin-top: 7%; */
   font-weight: 600;
 }
@@ -1126,6 +1312,40 @@ border-bottom: none;
   padding-top: 50px;
   padding-left: 20px;
 }
+
+/* App devlopment */
+
+.app-content-wrap p{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #000;
+  text-align: justify;
+  width: 80%;
+
+}
+.app-content-text{
+  padding: 20px 5px;
+    background-color: #E9F0F3;
+    font-size: 25px;
+    text-align: center;
+    /* text-align: justify; */
+    color: #000;
+    line-height: 30px;
+}
+.web-content-text{
+  padding: 20px 5px;
+    /* background-color: #E9F0F3; */
+    box-shadow: 0px -1px 12px rgba(61, 93, 112, 0.25);
+    border-radius: 5px;
+    border: 2px solid #E1DDDD;
+    font-size: 25px;
+    text-align: center;
+    /* text-align: justify; */
+    color: #000;
+    line-height: 30px;
+}
+
 /* .serv-card-wrap{
   padding-left: 40px;
 } */
@@ -1133,6 +1353,9 @@ border-bottom: none;
   /* .serv-right-col{
     display: none;
   } */
+  .right-side p{
+    white-space: normal;
+  }
   .why-div-wrap p{
     text-align: center;
   }
@@ -1361,6 +1584,10 @@ border-bottom: none;
   width: 90%;
   height: 80%;
 }
+.abt-col-web img{
+  width: 80%;
+  height: 220px;
+} 
 .abt-right-col {
   position: relative;
   align-items: center;
@@ -1536,7 +1763,8 @@ letter-spacing: 0;
 }
 
 .box .description{
-  font-size: 19px;
+  font-weight: 600;
+  font-size: 22px;
   color: #fff;
   line-height: 25px;
 }
@@ -1581,12 +1809,12 @@ letter-spacing: 0;
 }
 .hLine2 {
   display: inline-block;
-  height: 12px;
-  width: 8rem;
+  height: 10px;
+  width: 15rem;
   margin: 0;
   padding: 0;
   background: #fff;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 
 .process-cont{
@@ -2181,14 +2409,14 @@ z-index: 1;
 .team-card .details h2{
  margin: 0;
  padding: 0;
- font-weight: 600;
+ font-weight: 900;
  font-size: 20px;
  color: #777;
  text-transform: uppercase;
 } 
 
 .team-card .details h2 span{
-font-weight: 500;
+font-weight: 600;
 font-size: 16px;
 color: #f38695;
 display: block;
@@ -2271,3 +2499,34 @@ margin-top: 5px;
   transition:all 500ms ease-in-out;
 }
 	      
+/*************************************************************/
+/* Service pages */
+.design-div-wrap p{
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #07659D;
+  font-weight: 800;
+}
+
+.design-div-wrap h2{
+  font-size: 46px;
+  font-weight: 600;
+}
+.design-div-wrap h2 span{
+  font-weight: 800;
+  color: #07659D;
+}
+
+.conter-wrap p{
+  font-size: 23px;
+  font-weight: 500;
+}
+.all-service h2{
+  font-size: 46px;
+  font-weight: 600;
+}
+.all-service h2 span{
+  font-weight: 800;
+  color: #07659D;
+
+}

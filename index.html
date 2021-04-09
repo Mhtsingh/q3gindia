@@ -88,14 +88,24 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+              <li class="nav-link drop-down"><a href="services.html">Services <i class="arrow down"></i></a>
+                <ul>
+                  <li><a href="#">App Development</a></li>
+                  <li><a href="#">Web Devlopment</a></li>
+                  <li><a href="#">Creative Design</a></li>
+                  <li><a href="#">Software Development</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">RPA</a></li>
+                </ul>
               </li>
+            </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
@@ -108,7 +118,7 @@
           <div id="myModal" class="form-popup">
             <div class="modal-content">
             <span class="popupCloseButton">&times;</span>
-              <form action="" class="form-container ">
+            <form action="contact_us.php" method="post" class="form-container ">
                 <div class="row">
                   <div class="col-6">
                     <img src="assets/Images/contact.png"/>
@@ -120,21 +130,21 @@
                     <div class="row">
                       <div class="form-group col-md-6 col-6">
                         <label for="inputPassword4">Name *</label>
-                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        <input type="text" class="form-control"  name="name" id="name" placeholder="Name" required>
                       </div>
                       <div class="form-group col-md-6 col-6">
                         <label for="inputEmail4">Email *</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="form-group col-md-6 col-6" style="display:inline-grid;">
+                      <div class="fopm-group colgmd-6 col-6" style="display:inline-grid;">
                         <label for="inputPassword4">Contact Number *</label>
-                        <input type="number" class="form-control" id="contact" placeholder="999-99-999" min="5" required>
+                        <input type="number" class="form-control" id="contact" name="contact" placeholder="999-99-999" min="5" required>
                       </div>
                       <div class="form-group col-md-6 col-6">
                         <label for="inputEmail4">Subject</label>
-                        <select class="form-select" aria-label="Default select example" style="height: 50px;" required>
+                        <select class="form-select" aria-label="Default select example"  id="subject"  name="subject"style="height: 50px;" required>
                           <option selected disabled>Subject</option>
                           <option value="1">Development</option>
                           <option value="2">consultancy</option>
@@ -144,7 +154,7 @@
                     </div>
                     <div class="form-group pb-4">
                       <label for="exampleFormControlTextarea1">Message</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                     </div>
                     <button type="submit" class="col-lg-4 col-md-4 col-4 btn">Submit</button>
                   </div>
@@ -166,13 +176,11 @@
             <div class="col-lg-6 col-md-6 col-12 " style="padding-top:120px; padding-left: 40px; padding-bottom: 120px;">
               <div class="badge mb-2"></div>
               <h1 class="">Welcome to <span>Q3G India</span></h1>
-              <h2 class="">Best Platform to Grow</h2>
+              <h2 class="">Best platform to grow</h2>
               <p class="hero_head">YOUR BUSINESS</p>
               <div class="hr-element"></div>
               <p class="mb-4 hero_para">
-                Q3G India’s management team is comprised of professionals with
-                decades of experience representing clients of virtually all
-                sizes and across many industries.
+                Q3G India’s management team is comprised of professionals with decades of experience representing clients of virtually all shape and sizes across many industries.
               </p>
               <a href="about.html" class="rounded-btn mb-2">ABOUT US</a>
               <a href="portfolio.html" class="rounded-btn2 mb-2">PORTFOLIO</a>
@@ -193,10 +201,9 @@
         <div class="row align-items-center">
           <div class="col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="fact-item card1">
-              <h2><i class="far fa-thumbs-up"></i>&emsp; Trusted Services</h2>
+              <h2><i class="far fa-thumbs-up"></i>&emsp; Trusted Service</h2>
               <p>
                 We always strive to achieve your trust with 99.99% QUALITY and provide you highly customizable projects according to your needs.
-                
               </p>
               <div class="corner"></div>
             </div>
@@ -212,8 +219,7 @@
           <div class="col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="fact-item card3">
               <h2>
-                <i class="fas fa-user-friends"></i>&nbsp; Professional
-                Team
+                <i class="fas fa-user-friends"></i>&nbsp; Professional Team
               </h2>
               <p>
                 Your project will be developed by highly experienced developers who are well-versed with trending technologies.  
@@ -227,7 +233,7 @@
     <!-- Service card end -->
 
     <!-- About us Start -->
-    <div class="container-fluid mt-5">
+    <div class="container-fluid my-5">
       <div class="row align-items-center about-row-item">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 left-col">
           <img src="assets/Images/abt-img.png" loading="lazy" alt="aboutQ3GIndia" />
@@ -236,19 +242,17 @@
           <div class="hLine"></div>
           <h2>WHO WE ARE</h2>
           <h4>
-            Q3G India is best for
-            <span> Technology Provide Solutions</span>
+            Q3G India is best known for 
+            <span>Customized Solutions</span>
           </h4>
           <p>
-            Q3G India is a leading provider of software development and business
-            management solutions. Q3G India can develop customized development
-            and business solutions that meet our client’s highest standards.
+            Q3G India is a leading provider of software development and business management solutions.&ensp; We can develop customized solutions to meet our client’s highest standards.
           </p>
           <br />
-          <button class="btn rounded-btn4 mb-2" id="myBtn1" onclick="openForm()" >
+          <button  class="btn rounded-btn4 mb-2" id="myBtn1" onclick="openForm()" >
             HIRE US
           </button>   
-          <button class="btn mobile-btn mb-2" id="myBtn1" onclick="openForm()" >
+          <button href="contact.html" class="btn mobile-btn mb-2" id="myBtn1" onclick="openForm()" >
             HIRE US
           </button>   
           <a href="about.html" class="rounded-btn3 mb-2">READ MORE </a>
@@ -258,28 +262,33 @@
     <!-- ABout Us End -->
 
     <!-- Serve Segment Start  -->
-    <div class="container-fluid mt-5">
+    <!-- <div class="container-fluid mt-5">
       <div class="row align-items-center" style="padding-left: 20px">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 serv-left-side">
           <div class="hLine"></div>
           <h3>INDUSTRY SEGMENT <span>WE SERVE</span></h3>
           <br>  
           <p>
-            Q3G India, a mobile and web app development company in India and USA, 
-            promises to deliver a feature-packed mobile experience within your budget.
-            From the kick-off meeting to the final launch to your project, our development
-            services and solutions are designed to turn your app ideas into reality. 
-            For a full range of application programming services, consider our experienced and talented developers
+            Q3G India, a mobile and web app development company with offices in
+             India and USA, promises to deliver a feature-packed mobile experience
+              within your budget.&ensp;From the kick-off meeting to the final launch
+               of your project, our development services and solutions are designed
+                to turn your app ideas into reality.&ensp;For a full range of application
+                 programming services, consider our experienced and talented developers.
           </p>
           <br>
           <br>
-          <p class="vLine px-2" style="color: #07659D; font-size: 24px;">
+          <p class=" col-12 vLine px-2" style="color: #07659D; font-size: 24px;">
             Q3G India will provide you a visual overview of your efforts.
           </p>
           <br>
           <br>
           <p>
-            Q3G India is known for its ability to turn the visions of the clients into reality! The methodology is simple- We understand your goals and the demands of your customers and provide you with the best solutions. Moreover, our specialty is that we blend creativity with reality in the best possible manner to avoid any kinds of uncertain events in the future.
+            Q3G India is known for its ability to turn the visions of the clients into 
+            reality! The methodology is simple - We understand your goals and the 
+             to provide you with the best solutions.&ensp;Moreover, our specialty is that we
+              blend creativity with reality in the best possible manner to avoid any kinds
+               of uncertain events in the future.
           </p>
           <br>
           <a href="services.html" class="serv-rounded-btn mt-3 mb-2"> SEE ALL SERVICES </a>
@@ -291,7 +300,12 @@
                 <i><img src="./assets/Images/App_1.svg"/></i>
                 <h6>Enterprise Apps Development</h6>
                 <p>
-                  Assisting enterprises solve business and organization issues through mobility and seamless access to data.
+                  Enterprise mobile apps are assisting enterprises solve business 
+                  and organization issues through mobility and seamless access to data.&ensp;These
+                   tools are in great demand, as hyper-connectivity, extreme personalization, and
+                    real-time data sharing are the future.&ensp;The right enterprise mobile app development
+                     technology to reach their target audience.&ensp;Mobile, cloud, social and analytics 
+                     technologies are helping companies grow in an objective and practical manner.
                 </p>
                 <div class="corner"></div>
               </div>
@@ -301,7 +315,10 @@
                 <i><img src="/assets/Images/Data Management_2.svg"/></i>
                 <h6>Social Networking</h6>
                 <p>
-                  Q3G India offers many social networking apps for iOS and Android.
+                  Q3G India offers many social networking apps for iOS and Android. We develop Native
+                   iOS & Android apps and Cross-Platform Apps using Objective C, Swift, Java, Kotlin,
+                    React Native, Xamarin, Ionic.&ensp;Some of our best creations have been developed with
+                     geolocation, Facebook integration and featuring swipes and chat.
                 </p>
                 <div class="corner"></div>
               </div>
@@ -334,7 +351,6 @@
               <div class="serv-item item5"  style="background-color: #FB8500; color: #fff">
                 <i><img src="/assets/Images/Taxi_5.svg"/></i>
                 <h6>Ride App </h6>
-                <!-- <p>(Uber/Ola/Lyft Like)</p> -->
                 <p>
                   We developed and distributed ride-sharing and car-pooling apps.
                 </p>
@@ -354,65 +370,107 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Serve Segment End -->
-    <!-- <div class="tabs">
-      <div class="tab-header">
-        <div class="active">
-          <i class="fa fa-code"></i> Code
-        </div>
-        <div>
-          <i class="fa fa-pencil-square"></i> About
-        </div>
-        <div>
-          <i class="fa fa-bar-chart"></i> Services
-        </div>
-        <div>
-          <i class="fa fa-envelope"></i> Contact
-        </div>
+
+<section>
+  <div class="container-fluid bg-light py-5">
+    <div class="industry-segment">
+      <div class="hLine"></div>
+      <h2>
+        INDUSTRY SEGMENTS <span>WE SERVED</span>
+      </h2>
+      <p>
+        Q3G India, a mobile and web app development company with offices in 
+        India and USA, promises to deliver a feature-packed mobile experience
+         within your budget.&ensp; From the kick-off meeting to the final launch of your
+          project, our development services and solutions are designed to turn your 
+          app ideas into reality.&ensp; For a full range of application programming services,
+           consider our experienced and talented developers.
+      </p>
+      <p class="vLine  px-2" style="color: #07659D;">
+        Q3G India will provide you a visual overview of your efforts.
+      </p>
+      <p>
+        Q3G India is known for its ability to turn the visions of its clients into reality! 
+         The methodology is simple - we understand your requirements and goals and endeavor
+          to provide you with optimal solutions.  Moreover, our specialty is that we blend
+           creativity with reality in the best possible manner to avoid any kinds of unforeseen events in the future.
+      </p>
+    </div>
+    <div class="row pt-3">
+      <div class="tab col-md-4 col-sm-12 col-12">
+        <button class="tablinks tab-btn1" onclick="openCity(event, 'London')" id="defaultOpen">Enterprise Apps Development</button>
+        <button class="tablinks tab-btn2" onclick="openCity(event, 'Paris')">Social Networking</button>
+        <button class="tablinks tab-btn3" onclick="openCity(event, 'Tokyo')">Real Estate</button>
+        <button class="tablinks tab-btn4" onclick="openCity(event, 'Delhi')">Travel & Tourism</button>
+        <button class="tablinks tab-btn5" onclick="openCity(event, 'Mumbai')">Ride App (Uber/Ola/Lyft Like)</button>
+        <button class="tablinks tab-btn6" onclick="openCity(event, 'Mohali')">Big Data Management</button>
       </div>
-      <div class="tab-indicator"></div>
-      <div class="tab-content">
-        
-        <div class="active">
-          <i class="fa fa-code"></i>
-          <h2>This is code section</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
-        </div>
-        
-        <div>
-          <i class="fa fa-pencil-square"></i>
-          <h2>This is about section</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
-        </div>
-        
-        <div>
-          <i class="fa fa-bar-chart"></i>
-          <h2>This is services section</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
-        </div>
-        
-        <div>
-          <i class="fa fa-envelope"></i>
-          <h2>This is contact section</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque vero ea perferendis consectetur veritatis.</p>
-        </div>  
+      <div class="col-md-8 col-sm-12 col-12" style="padding-right: 2%;">
+      <div id="London" class="tabcontent">
+        <img src="/assets/Images/tabs/1.svg"/>
+        <p>Enterprise mobile apps are assisting enterprises solve business and organization issues 
+          through mobility and seamless access to data.&ensp; These tools are in great demand, as hyper-connectivity,
+           extreme personalization, and real-time data sharing are the future.&ensp; Mobile, cloud, social and
+            analytics technologies are helping companies grow in an objective and practical manner.</p>
+      </div>
+      <div id="Paris" class="tabcontent">
+        <img src="/assets/Images/tabs/2.svg"/>
+        <p>Q3G India offers many social networking apps for iOS and Android.&ensp;  We develop Native iOS & Android
+           apps and Cross-Platform Apps using Objective C, Swift, Java, Kotlin, React Native, Xamarin,
+            Ionic.&ensp; Some of our best creations have been developed with geolocation, Facebook integration and 
+            featuring swipes and chat.</p> 
+      </div>
+      <div id="Tokyo" class="tabcontent">
+        <img src="/assets/Images/tabs/3.svg"/>
+        <p>Q3G India is a leader in transforming the real estate market from paper to digital and thus made the
+           entire property market easily accessible to all users: sellers, buyers, brokers, agents, escrow companies
+            and mortgage entities.&ensp; Being a leading real estate app development company, we cover all aspects of the
+             real estate ecosystem, including sellers, tenants or even brokers who act as middlemen and aggregators 
+             in various fields under one succinct platform.</p>
+      </div>
+      <div id="Delhi" class="tabcontent">
+        <img src="/assets/Images/tabs/4.svg"/>
+        <p>Over the past few years, travel and hospitality markets have seen an increased boom due to the accessibility
+          of travel data/deals on mobile devices through web and native apps.&ensp; There is a huge demand for travel app 
+          development in the form of hyper-connectivity, extreme personalization, and real-time data sharing, leading 
+          to a growth in travel and tourism verticals.&ensp; True travel mobile app development solutions are helping
+           organizations achieve accurate and result-oriented technology to reach travelers in a more efficient manner.</p>
+      </div>
+      <div id="Mumbai" class="tabcontent">
+        <img src="/assets/Images/tabs/5.svg"/>
+        <p>For mobile ride app development, hire developers at Q3G India.  We developed and distributed ride-sharing 
+          and car-pooling apps using tools such as Java, Android Studio, Objective C & X code, which are the best-developed
+           travel-based mobile apps with great App Store and Play Store ratings.&ensp; From geo-fencing, geo location and
+            tracking services to social feed integration, our travel apps are gaining increasing popularity.</p>
+      </div>
+      <div id="Mohali" class="tabcontent">
+        <img src="/assets/Images/tabs/6.svg"/>
+        <p>Q3G India is helping its clients’ business with profound Big Data Management solutions.&ensp; Our primary focus
+           is not to just provide these services, but also to assist in improving the quality of services provided by 
+           our clients downstream.&ensp;
+          Apart from providing our clients with Big Data Management services, our team also provides web and app 
+          development services in Python and IoT.
+          </p>     
       </div>
     </div>
-     -->
+    </div>
+    <!-- <a href="services.html" class="serv-rounded-btn mt-3 mb-2"> SEE ALL SERVICES </a> -->
+  </div>
+</section>
+
     <!-- Service Segment Start -->
     <div class="container-fluid mt-5">
       <div class="row justify-content-center"style="padding-left: 20px" >
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 serv-left-col">
           <div class="hLine"></div>
-          <h2>OUR KEY <span>SERVICES</span></h2>
+          <h2>OUR MAIN <span>SERVICES</span></h2>
           <p>
-            Founded in the year 2018, we began with a team of 2 members which
-            has now mushroomed into a full-fledged team of experts. At our
-            nascent stage, we focused on a limited number of services such as
-            landing page and WordPress development. With time, as we grew bigger
-            and gained more expertise, many more feathers were added to our cap
-            such as:
+            Founded years ago, we began with a team of only two members which has now mushroomed 
+            into a full-fledged team of experts.&ensp; At our nascent stage, we focused on a limited 
+            number of services such as landing page and WordPress development.&ensp; As we grew and gained
+             more expertise, many more feathers were added to our cap such as:  
           </p>
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-4">
@@ -431,7 +489,7 @@
                   <i class="fas fa-globe-americas"></i>
                 </div>
                 <div class="col-lg-8 col-6 right-side">
-                  <p>Web Development</p>
+                  <p>Web Development </p>
                 </div>
               </div>
             </div>
@@ -443,7 +501,7 @@
                   <i class="fab fa-figma"></i>
                 </div>
                 <div class="col-lg-8 col-6 right-side">
-                  <p>App Designing</p>
+                  <p>Creative Design</p>
                 </div>
               </div>
             </div>
@@ -453,7 +511,7 @@
                   <i class="fas fa-folder-open"></i>
                 </div>
                 <div class="col-lg-8 col-6 right-side">
-                  <p>Open Source</p>
+                  <p>Software Development</p>
                 </div>
               </div>
             </div>
@@ -465,7 +523,7 @@
                   <i class="fas fa-pencil-ruler"></i>
                 </div>
                 <div class="col-lg-8 col-6 right-side">
-                  <p>UI/UX Design</p>
+                  <p>Digital Marketing</p>
                 </div>
               </div>
             </div>
@@ -475,12 +533,12 @@
                   <i class="fas fa-funnel-dollar"></i>
                 </div>
                 <div class="col-lg-8 col-6 right-side">
-                  <p>Digital Marketing</p>
+                  <p>Machine Learning</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-4">
               <div class="row capsule">
                 <div class="col-lg-4 col-6 left-side7">
@@ -501,7 +559,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->  
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 serv-right-col">
           <img src="assets/Images/serve-img.png" loading="lazy" alt="service" />
@@ -520,35 +578,21 @@
           <div class="hLine"></div>
           <h3>OUR CORE <span>VALUES</span></h3>
           <p>
-            Providing the best services to our clients is what we aim to do. For
-            us, the satisfaction of our clients is of the utmost importance. Our
-            team ensures that whatever project we take up, we complete it
-            successfully.
-          </p>
-          <!-- <div class="row">
-            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 col-2">
-              <i class="fas fa-check-square" style="color: #07659D;"></li>
-              <i class="fas fa-check-square"style="color: #FB8500;"></i>
-            </div>
-            <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10 col-10">
-              <p> Transparent processes are what we aim at.</p>
-              <p> Our team is our biggest asset, and we value our people the most.</p>
-            </div>
-
-          </div> -->
-          
+            Providing the best services at a competitive rate to our clients is what we aim to do.&ensp; For us,
+            the satisfaction of our clients is of the utmost importance.&ensp; Our team ensures that whatever
+            project we have the opportunity to handle, we ensure we complete it successfully, timely and
+            to our clients’ standards. 
+          </p>    
           <div class="core-list" >
-          
               <li class="core-list1">
-                Transparent processes are what we aim at.
+                Transparent processes are what we aim at. 
               </li>
-              <li class="core-list2">
-                We treat our clients like kings.
-              </li>
+              <!-- <li class="core-list2">
+                We treat our clients like kings. 
+              </li> -->
               <li class="core-list3">Our team is our biggest asset, and we value our people the most.</li>
               <li class="core-list4">We work together to provide exceptional results.</li>
-              <li class="core-list5">
-              Every day we aim to achieve a new milestone we aim to achieve.
+              <li class="core-list5">Every day we aim to achieve a new milestone.
               </li>
           
           
@@ -572,14 +616,12 @@
       <div class="row"  style="padding-left: 20px">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 why-div-wrap">
           <div class="hLine"></div>
-          <h3>WHY <span>CHOOSE US</span></h3>
+          <h3>WHY <span>CHOOSE US ?</span></h3>
           <p>
-            Q3G India has been long known for its ability to turn the visions of
-            the clients into reality! The methodology followed is simple- We
-            understand your goals and the demands of your customers and provide
-            you with the best solutions. Our specialty is that we blend
-            creativity with reality in the best possible manner to avoid any
-            kinds of uncertain events in the future.
+            Q3G India has long been known for its ability to turn the visions of the clients into
+            reality!  The methodology followed is simple- we understand your requirements and goals
+            and endeavor to provide you with optimal solutions.  Our specialty is blending creativity
+            with reality in the best possible manner to avoid any unforeseen events in the future.
           </p>
           <div class="row">
             <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 col-2 why-img-bullet">
@@ -633,7 +675,7 @@
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
-            <a href="blog.html">Blog</a>
+            <!-- <a href="blog.html">Blog</a> -->
             <a href="">Terms and Conditions</a>
             <a href="">Privacy</a>
             <a href="contact.html">Conatct Us</a>
@@ -668,11 +710,14 @@
     </div>
     <!-- Footer End -->
     <!-- JavaScript Bundle with Popper -->
-    <script
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script src="js/main.js"></script>
 
 
