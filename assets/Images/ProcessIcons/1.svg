@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 83" width="80" height="65">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #fdbd17;stroke: #ffffff;stroke-width: 2 } 
+		.shp1 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="shp0" d="M1 1L101 1L101 82L1 82L1 1Z" />
+	<path id="Layer" fill-rule="evenodd" class="shp1" d="M43.21 58.26C40.52 58.26 36.9 56.71 35.07 54.16C26.27 54.16 26 67.63 26 67.63L60.26 67.63C60.27 67.63 60.95 54.11 51.06 54.11C49.23 56.68 45.92 58.26 43.21 58.26Z" />
+	<path id="Layer" fill-rule="evenodd" class="shp1" d="M50.78 37.48C50.78 41.79 47.32 50.05 43.04 50.05C38.77 50.05 35.31 41.79 35.31 37.48C35.31 33.17 38.77 29.66 43.04 29.66C47.32 29.66 50.78 33.17 50.78 37.48L50.78 37.48Z" />
+	<path id="Layer" fill-rule="evenodd" class="shp1" d="M65.15 16C59.17 16 54.31 20 54.31 24.94C54.31 29.45 58.37 33.16 63.62 33.78L60.53 40.03L69.16 33.24C73.16 31.92 76 28.7 76 24.94C76 20 71.14 16 65.15 16L65.15 16Z" />
+</svg>

@@ -1311,7 +1311,7 @@ border-bottom: none;
   /* justify-content: center; */
 }
 .right-side p{
-  white-space: nowrap;
+  /* white-space: nowrap; */
   font-size: 17px;
   /* text-align: center; */
   /* margin-top: 7%; */
@@ -1822,6 +1822,9 @@ font-size: 39px;
 }
 
 /* Work Process */
+.floating img{  
+  width: 100%;
+}
 .floating{  
   animation-name: floating;
   animation-duration: 3s;
@@ -1871,6 +1874,15 @@ font-size: 39px;
   padding: 10px 10px;
   padding-left: 4rem;
 }
+.icon-left1 {
+  background:url('/assets/Images/ProcessIcons/1.svg') no-repeat ;
+}
+.icon-left2 {
+  background:url('/assets/Images/ProcessIcons/2.svg') no-repeat ;
+}
+.icon-left3 {
+  background:url('/assets/Images/ProcessIcons/3.svg') no-repeat ;
+}
 .icon-left1 img{
   float: left;
   padding: 10px 10px;
@@ -1901,6 +1913,16 @@ font-size: 39px;
 }
 .icon-left3 img:hover{
   background: none;
+}
+.icon-right1{
+  
+  background: url(/assets/Images/ProcessIcons/4.svg) no-repeat right;
+}
+.icon-right2{
+  background: url(/assets/Images/ProcessIcons/5.svg) no-repeat right;
+}
+.icon-right3{
+  background: url(/assets/Images/ProcessIcons/6.svg) no-repeat right;
 }
 .icon-right1 img{
   float: right;
@@ -1935,6 +1957,9 @@ font-size: 39px;
 .icon-right3 img:hover{
   background: none;
 }
+.pro-text{
+  padding-right: 7rem;
+}
 .pro-text h3{
   /* animation: heading 7s steps(13,end) infinite; */
   /* overflow: hidden;
@@ -1948,6 +1973,9 @@ font-size: 39px;
   font-size: 18px;
   text-align: right;
 }
+.pro-text-left{
+  padding-left: 7rem;
+  }
 .pro-text-left h3{
   font-size: 22px;
   font-weight: 700;
