@@ -1,62 +1,64 @@
+
 // Header active
 
 var header = document.getElementById("headDiv");
-var btns = header.getElementsByClassName("nav-link");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+var navLink = header.getElementsByClassName("nav-link");
+for (var i = 0; i < navLink.length; i++) {
+  navLink[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("activeLink");
   current[0].className = current[0].className.replace(" activeLink", "");
   this.className += " activeLink";
   });
 }
-
-
+//  pop up form script
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+// var btns = document.getElementById("myBtn1");
+var span = document.getElementsByClassName("popupCloseButton")[0]; 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// btns.onclick = function() {
+//   modal.style.display = "block";
+// }
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 //Country code script  
   
- const phoneInputField = document.querySelector("#contact");
- const phoneInput = window.intlTelInput(phoneInputField, {
-   utilsScript:
-     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
- });
-  // ******************************************
-  // function openCity(evt, cityName) {
-  //   var i, tabcontent, tablinks;
-  //   tabcontent = document.getElementsByClassName("tabcontent");
-  //   for (i = 0; i < tabcontent.length; i++) {
-  //     tabcontent[i].style.display = "none";
-  //   }
-  //   tablinks = document.getElementsByClassName("tablinks");
-  //   for (i = 0; i < tablinks.length; i++) {
-  //     tablinks[i].className = tablinks[i].className.replace(" active", "");
-  //   }
-  //   document.getElementById(cityName).style.display = "block";
-  //   evt.currentTarget.className += " active";
-  // }
+const phoneInputField = document.querySelector("#contact");
+const phoneInput = window.intlTelInput(phoneInputField, {
+  utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+
+// Vertical tab
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+  tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+  tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
   
-  // // Get the element with id="defaultOpen" and click on it
-  // document.getElementById("defaultOpen").click();
 // **************************************
 
-//  pop up form script
-  var modal = document.getElementById("myModal");
-  var btn = document.getElementById("myBtn");
-  var btns = document.getElementById("myBtn1");
-  var span = document.getElementsByClassName("popupCloseButton")[0]; 
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-  // btns.onclick = function() {
-  //   modal.style.display = "block";
-  // }
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
+
 
 // portfolio product script
 filterSelection("all")

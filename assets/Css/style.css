@@ -583,8 +583,8 @@ border-bottom: none;
 
 .fact .fact-item {
   position: relative;
-  width: 85%;
-  height: 180px;
+  width: 90%;
+  height: 200px;
   margin-bottom: 30px;
   /* padding: 30px 0 25px 0; */
   text-align: center;
@@ -786,6 +786,9 @@ border-bottom: none;
   .fact .fact-item h2 {
     font-size: 16px;
   }
+  .fact .fact-item {
+    height: 230px;
+  }
 }
 
 
@@ -849,7 +852,10 @@ border-bottom: none;
   }
  .right-col h4{
   letter-spacing: 2px;
-  font-size: 32px;
+  font-size: 21px;
+}
+.right-col h2 {
+  font-size: 25px;
 }
 }
 
@@ -864,15 +870,11 @@ border-bottom: none;
   font-weight: 800;
 }
 .industry-segment p{
+  text-align: justify;
   font-size: 20px;
   color: #000;
 }
 
-.tab {
-  /* float: left; */
-  /* width: 30%; */
-  /* height: 400px; */
-}
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -913,9 +915,9 @@ border-bottom: none;
    color: #fff;
 }
 /* Change background color of buttons on hover */
-.tab button:hover {
+/* .tab button:hover {
   
-}
+} */
 
 /* Create an active/current "tab button" class */
 .tab button.active {
@@ -946,7 +948,18 @@ border-bottom: none;
   font-weight: 600;
   padding: 30px 41px;
 }
+@media (max-width: 768px) {
+  .industry-segment h2 {
+  font-size: 30px;
+  }
+  .tabcontent p {
+    font-size: 17px;
+  }
+  .tab button {
+    font-size: 20px;
+  }
 
+}
 
 /* ************ */
 .serv-left-side h3{
@@ -1143,6 +1156,9 @@ border-bottom: none;
   .serv-left-side h3{
     font-size: 28px;
     letter-spacing: 2px;
+  }
+  .item1 h6{
+    font-size: 12px;
   }
 }
 
@@ -1373,6 +1389,9 @@ border-bottom: none;
   }
   .serv-card-wrap{
     padding-left: 0;
+  }
+  .serv-left-col h2 {
+    font-size: 30px;
   }
  }
 
@@ -1634,9 +1653,16 @@ border-bottom: none;
 .abt-btn2:hover {
   text-decoration: none;
   background-color: transparent;
-  color: #2B8439
-  ;
+  color: #2B8439;
 }
+.abt-sol-para{
+background-color: #000;
+ font-size: 22px;
+  text-align: justify;
+   color: #fff; 
+   line-height: 36px;
+}
+
 @media (max-width: 992px) {
  .abt-right-col h4{
   letter-spacing: 2px;
@@ -1652,7 +1678,7 @@ border-bottom: none;
   padding-top: 2rem;
 }
 .abt-right-col p {
-font-size: 25px;
+font-size: 16px;
 letter-spacing: 0;
 }
 .abt-right-col h2{
@@ -1660,6 +1686,9 @@ letter-spacing: 0;
 }
 .abt-left-col img {
   width: 100%;
+}
+.abt-sol-para{
+  font-size: 17px;
 }
 
 }
@@ -1780,6 +1809,13 @@ letter-spacing: 0;
 }
 @media screen and (max-width:990px){
   .box{ margin-bottom:20px; }
+.mission-wrap h1{
+font-size: 39px;
+}
+.box h1 {
+  left: 23%;
+}
+
 }
 @media screen and (max-width:360px){
   .box .content{ padding: 15% 10%; }
@@ -1823,7 +1859,7 @@ letter-spacing: 0;
   margin-bottom: 2rem;
 }
 .process-cont h2 span{
-  font-size: 46px;
+  /* font-size: 46px; */
   color: #fff;
   font-weight: 800;
 }
@@ -1920,11 +1956,14 @@ letter-spacing: 0;
   font-size: 18px;
 }
 
-
 @media (max-width:1000px)
 {
   .floating-img{
     display: none;
+  }
+
+  .process-cont h2{
+    font-size: 30px;
   }
 }
 /* Counter */
@@ -1990,6 +2029,15 @@ letter-spacing: 0;
 
 }
 
+@media (max-width: 786px){
+  .team-wrap h3 {
+    font-size: 30px;
+  }
+  .team-wrap h1 {
+font-size: 30px;
+  }
+}
+
 /**********************/
 /*********************/
 /********************/
@@ -2012,6 +2060,7 @@ letter-spacing: 0;
 }
 
 .serc-wrap p{
+  text-align: justify;
   font-size: 21px;
   font-weight: 500;
   line-height: 28px;
@@ -2235,27 +2284,6 @@ padding: 16px 5px;
     margin-left: 35%;
 }
 
-/* .form-control{
-    margin-top: 20px;
-    color: #fff !important;
-    background: transparent;
-    border: 2px solid #ffffff;
-  border-radius: 0rem;
-    padding: 4px 22px;
-    font-size: 14px;
-}
-
-.form-select{
-  height: 50px;
-  margin-top: 20px;
-  color: #fff !important;
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 0rem;
-  padding: 4px 22px;
-  font-size: 14px;
-} */
-
 .form-heading{
   position: relative;
   text-align: center;
@@ -2279,6 +2307,12 @@ padding: 16px 5px;
 }
 .contact-card-img{
   margin-top: -12px;
+}
+
+@media (max-width: 768px){
+  .Conatct-card-wrap{
+    padding-left: 0;
+  }
 }
 /**********************/
 /*********************/
@@ -2510,10 +2544,15 @@ margin-top: 5px;
   font-weight: 800;
   color: #07659D;
 }
-
+.sign-text-wrap li{
+  list-style: none;
+  font-size: 22px;
+  font-weight: 500;
+}
 .conter-wrap p{
   font-size: 23px;
   font-weight: 500;
+  text-align: justify;
 }
 .all-service h2{
   font-size: 46px;
@@ -2533,7 +2572,7 @@ border-radius: 5px;
 }
 .app-item p{
   text-align: start;
-  /* padding-left: 14%; */
+  padding-left: 14%;
 }
 .app-item li{
   text-align: start;
@@ -2541,6 +2580,7 @@ border-radius: 5px;
 }
 
 .design-div p{
+  text-align: justify;
   font-size: 23px;
   font-weight:500;
 }
@@ -2561,4 +2601,17 @@ height: 86%;
 }
 .imag04{
   padding: 20px;
+}
+
+@media (max-width: 786px){
+  .design-div-wrap p{
+    font-size: 19px;
+  }
+
+.design-div-wrap h2{
+  font-size: 40px;
+}
+.all-service h2 {
+font-size: 30px;
+}
 }
