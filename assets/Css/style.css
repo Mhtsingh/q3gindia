@@ -231,7 +231,7 @@ body {
   margin-left: 10rem;
   letter-spacing: 2px;
   margin-left:2rem;
-  margin-right:2rem;
+  /* margin-right:2rem; */
 }
 .nav-link{
   margin-left: 2rem;
@@ -977,6 +977,17 @@ border-bottom: none;
  text-align: justify;
  padding-right: 76px;
 }
+.home-serv-item {
+  position: relative;
+  padding: 15px 0 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  height: 86%;
+}
+.home-serv-item p{
+  color: gray;
+  font-size: 12px;
+}
 
 .serv-item {
   position: relative;
@@ -1699,7 +1710,7 @@ letter-spacing: 0;
   margin-left: 7rem;
 }
 .mission-wrap h1{
-  font-size: 46px;
+  font-size: 42px;
   font-weight: 800;
   color: #000;
   line-height: 54px;
@@ -1915,7 +1926,6 @@ font-size: 39px;
   background: none;
 }
 .icon-right1{
-  
   background: url(/assets/Images/ProcessIcons/4.svg) no-repeat right;
 }
 .icon-right2{
@@ -1924,18 +1934,18 @@ font-size: 39px;
 .icon-right3{
   background: url(/assets/Images/ProcessIcons/6.svg) no-repeat right;
 }
-.icon-right1 img{
+/* .icon-right1 img{
   float: right;
   padding: 10px 10px;
   border: 2px solid;
   margin-left: 2rem;
   background: red;
-}
+} */
 
-.icon-right1 img:hover{
+/* .icon-right1 img:hover{
   background: none;
-}
-.icon-right2 img{
+} */
+/* .icon-right2 img{
   float: right;
   padding: 10px 10px;
   border: 2px solid;
@@ -1956,7 +1966,7 @@ font-size: 39px;
 
 .icon-right3 img:hover{
   background: none;
-}
+} */
 .pro-text{
   padding-right: 7rem;
 }
@@ -1967,11 +1977,11 @@ font-size: 39px;
   /* text-shadow: 2px 2px 4px rgb(175, 191, 219); */
   font-size: 22px;
   font-weight: 700;
-  text-align: end;
+  /* text-align: end; */
 }
 .pro-text p{
   font-size: 18px;
-  text-align: right;
+  /* text-align: right; */
 }
 .pro-text-left{
   padding-left: 7rem;
@@ -2631,6 +2641,14 @@ height: 86%;
   padding: 20px;
 }
 
+.app-development{
+  height: 270px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.app-development-img img{
+  float: right;
+  height: 270px;
+}
 @media (max-width: 786px){
   .design-div-wrap p{
     font-size: 19px;

@@ -1,4 +1,30 @@
 
+$(document).ready(function () {
+  $('#lets_from').submit(function () {
+      $('#btn_lets').html('Processing.....').prop('disabled', true);
+      var values = $("#lets_from").serialize();
+      $.ajax({
+          url: "contact_us.php",
+          type: "post",
+          data: values,
+          success: function (response) {
+             var result =   JSON.parse(JSON.stringify(response));
+              console.log(result);
+              $('#btn_lets').html('Submit').prop('disabled', false);
+              if (result['error'] == 1) {
+                  swal({title: "Error", text: result['error_msg'], icon: "error", buttons: false, timer: 2000});
+
+              } else {
+                  swal({title: "Success", text: result['error_msg'], icon: "success", buttons: false, timer: 2000});
+                  window.location.reload();
+              }
+          },
+          error: function (jqXHR, textStatus, errorThrown) {
+              console.log(textStatus, errorThrown);
+          }
+      });
+  });
+});
 // Header active
 
 var header = document.getElementById("headDiv");
@@ -58,52 +84,50 @@ function openCity(evt, cityName) {
   
 // **************************************
 
-
-
 // portfolio product script
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+// filterSelection("all")
+// function filterSelection(c) {
+//   var x, i;
+//   x = document.getElementsByClassName("column");
+//   if (c == "all") c = "";
+//   for (i = 0; i < x.length; i++) {
+//     w3RemoveClass(x[i], "show");
+//     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+//   }
+// }
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+// function w3AddClass(element, name) {
+//   var i, arr1, arr2;
+//   arr1 = element.className.split(" ");
+//   arr2 = name.split(" ");
+//   for (i = 0; i < arr2.length; i++) {
+//     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+//   }
+// }
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
+// function w3RemoveClass(element, name) {
+//   var i, arr1, arr2;
+//   arr1 = element.className.split(" ");
+//   arr2 = name.split(" ");
+//   for (i = 0; i < arr2.length; i++) {
+//     while (arr1.indexOf(arr2[i]) > -1) {
+//       arr1.splice(arr1.indexOf(arr2[i]), 1);     
+//     }
+//   }
+//   element.className = arr1.join(" ");
+// }
 
-var btnContainer = document.getElementById("productContainer");
-// var btns = header.getElementsByClassName("nav-link");
+// var btnContainer = document.getElementById("productContainer");
+// // var btns = header.getElementsByClassName("nav-link");
 
-var Pbtns = btnContainer.getElementsByClassName("Pbtn");
-for (var i = 0; i < Pbtns.length; i++) {
-  Pbtns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("activeButton");
-    current[0].className = current[0].className.replace("activeButton", "");
-    this.className += "activeButton";
-  });
-}
+// var Pbtns = btnContainer.getElementsByClassName("Pbtn");
+// for (var i = 0; i < Pbtns.length; i++) {
+//   Pbtns[i].addEventListener("click", function(){
+//     var current = document.getElementsByClassName("activeButton");
+//     current[0].className = current[0].className.replace("activeButton", "");
+//     this.className += "activeButton";
+//   });
+// }
 
 // Read More Script
 function readMoreFunction1() {
