@@ -1,30 +1,56 @@
-
+//contact form 
 $(document).ready(function () {
-  $('#lets_from').submit(function () {
-      $('#btn_lets').html('Processing.....').prop('disabled', true);
-      var values = $("#lets_from").serialize();
-      $.ajax({
-          url: "contact_us.php",
-          type: "post",
-          data: values,
-          success: function (response) {
-             var result =   JSON.parse(JSON.stringify(response));
-              console.log(result);
-              $('#btn_lets').html('Submit').prop('disabled', false);
-              if (result['error'] == 1) {
-                  swal({title: "Error", text: result['error_msg'], icon: "error", buttons: false, timer: 2000});
+    $('#lets_from').submit(function () {
+        $('#btn_lets').html('Processing.....').prop('disabled', true);
+        var values = $("#lets_from").serialize();
+        $.ajax({
+            url: "contact_us.php",
+            type: "post",
+            data: values,
+            success: function (response) {
+                var result = JSON.parse(JSON.stringify(response));
+                console.log(result);
+                $('#btn_lets').html('Submit').prop('disabled', false);
+                if (result['error'] == 1) {
+                    swal({title: "Error", text: result['error_msg'], icon: "error", buttons: false, timer: 2000});
 
-              } else {
-                  swal({title: "Success", text: result['error_msg'], icon: "success", buttons: false, timer: 2000});
-                  window.location.reload();
-              }
-          },
-          error: function (jqXHR, textStatus, errorThrown) {
-              console.log(textStatus, errorThrown);
-          }
-      });
-  });
+                } else {
+                    swal({title: "Success", text: result['error_msg'], icon: "success", buttons: false, timer: 2000});
+                    window.location.reload();
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log(textStatus, errorThrown);
+            }
+        });
+    });
+    $('#contact_from').submit(function () {
+    $('#btn').html('Processing.....').prop('disabled', true);
+    var values = $("#contact_from").serialize();
+    $.ajax({
+        url: "contact_us.php",
+        type: "post",
+        data: values,
+        success: function (response) {
+           var result = JSON.parse(JSON.stringify(response));
+            console.log(result);
+            $('#btn').html('SEND MESSAGE').prop('disabled', false);
+            if (result['error'] == 1) {
+                swal({title: "Error", text: result['error_msg'], icon: "error", buttons: false, timer: 2000});
+
+            } else {
+                swal({title: "Success", text: result['error_msg'], icon: "success", buttons: false, timer: 2000});
+                window.location.reload();
+            }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+        }
+    });
 });
+});
+
+
 // Header active
 
 var header = document.getElementById("headDiv");
@@ -65,21 +91,21 @@ const phoneInput = window.intlTelInput(phoneInputField, {
 });
 
 // Vertical tab
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-  tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-  tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-  }
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+// function openCity(evt, cityName) {
+//   var i, tabcontent, tablinks;
+//   tabcontent = document.getElementsByClassName("tabcontent");
+//   for (i = 0; i < tabcontent.length; i++) {
+//   tabcontent[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablinks");
+//   for (i = 0; i < tablinks.length; i++) {
+//   tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
+//   document.getElementById(cityName).style.display = "block";
+//   evt.currentTarget.className += " active";
+//   }
+//   // Get the element with id="defaultOpen" and click on it
+//   document.getElementById("defaultOpen").click();
 
   
 // **************************************

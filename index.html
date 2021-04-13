@@ -31,6 +31,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link href="assets/Css/style.css" rel="stylesheet" />
+     <link href="sweetalert/sweetalert.css" rel="stylesheet">
   </head>
   <body>
     <!-- Top Bar Start -->
@@ -52,7 +53,7 @@
           <div class="col-md-4">
             <div class="top-bar-right">
               <div class="social">
-                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.facebook.com/Q3GIndia/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
                 <a href=""><i class="fab fa-linkedin"></i></a>
                 <a href=""><i class="fab fa-instagram"></i></a>
                 <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
@@ -119,7 +120,7 @@
           <div id="myModal" class="form-popup">
             <div class="modal-content">
             <span class="popupCloseButton">&times;</span>
-            <form action="contact_us.php" method="post" class="form-container ">
+           <form action="contact_us.php" method='post' class="form-container " id="lets_from" name="lets_from" onsubmit="return false">
                 <div class="row">
                   <div class="col-6">
                     <img src="assets/Images/contact.png"/>
@@ -139,7 +140,7 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="fopm-group colgmd-6 col-6" style="display:inline-grid;">
+                      <div class="form-group colgmd-6 col-6" style="display:inline-grid;">
                         <label for="inputPassword4">Contact Number *</label>
                         <input type="number" class="form-control" id="contact" name="contact" placeholder="999-99-999" min="5" required>
                       </div>
@@ -147,9 +148,9 @@
                         <label for="inputEmail4">Subject</label>
                         <select class="form-select" aria-label="Default select example"  id="subject"  name="subject"style="height: 50px;" required>
                           <option selected disabled>Subject</option>
-                          <option value="1">Development</option>
-                          <option value="2">consultancy</option>
-                          <option value="3">Marketing</option>
+                          <option value="Development">Development</option>
+                          <option value="Consultancy">Consultancy</option>
+                          <option value="Marketing">Marketing</option>
                         </select> 
                       </div>
                     </div>
@@ -157,7 +158,7 @@
                       <label for="exampleFormControlTextarea1">Message</label>
                       <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="col-lg-4 col-md-4 col-4 btn">Submit</button>
+                    <button type="submit"id="btn_lets" name="btn_lets" class="col-lg-4 col-md-4 col-4 btn">Submit</button>
                   </div>
                 </div>
               </form>
@@ -400,7 +401,7 @@
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12 col-12 pt-2 serv-card-wrap">
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12 serv-block-right">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-5 serv-block-right">
           <div class="home-serv-item item1" style="background-color: #ED5314;color: #fff">
             <i><img src="./assets/Images/industy/01.svg"/></i>
             <h6>Enterprise Apps Development</h6>
@@ -408,27 +409,24 @@
               Enterprise mobile apps are assisting companies solve business 
               and organization issues through mobility and seamless access to data.&ensp;These
                tools are in great demand, as hyper-connectivity, extreme personalization, and
-                <!-- real-time data sharing are the future.&ensp;The right enterprise mobile app development
-                 technology to reach their target audience.&ensp;Mobile, cloud, social and analytics 
-                 technologies are helping companies grow in an objective and practical manner. -->
+              real-time data sharing are the future.
             </p>
             <div class="corner"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12 serv-block-left">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-5 serv-block-left">
           <div class="home-serv-item item2"  style="background-color: #07659D; color: #fff">
             <i><img src="/assets/Images/industy/02.svg"/></i>
             <h6>Social Networking</h6>
             <p>
               Q3G India offers many social networking apps for iOS and Android.&ensp; We develop Native
                iOS & Android apps and Cross-Platform Apps using Objective C, Swift, Java, Kotlin,
-                <!-- React Native, Xamarin, Ionic.&ensp;Some of our best creations have been developed with
-                 geolocation, Facebook integration and featuring swipes and chat. -->
+                React Native, Xamarin, Ionic.
             </p>
             <div class="corner"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12 serv-block-left">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-5 serv-block-left">
           <div class="home-serv-item item2"  style="background-color: #FFB41B; color: #fff">
             <i><img src="/assets/Images/industy/03.svg"/></i>
             <h6>Real Estate</h6>
@@ -447,7 +445,7 @@
      
       </div> -->
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12 serv-block-right">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-5 serv-block-right">
           <div class="home-serv-item item5"  style="background-color: #53A03C; color: #fff">
             <i><img src="/assets/Images/industy/04.svg"/></i>
             <h6>Ride App (Uber/Ola/Lyft Like) </h6>
@@ -459,7 +457,7 @@
             <div class="corner"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12 serv-block-left">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-5 serv-block-left">
           <div class="home-serv-item item4"  style="background-color: #05C9DE; color: #fff">
             <i><img src="/assets/Images/industy/05.svg"/></i>
             <h6>Travel & Tourism</h6>
@@ -471,7 +469,7 @@
             <div class="corner"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12 serv-block-left">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-5 serv-block-left">
           <div class="home-serv-item item6"  style="background-color: #4624A8; color: #fff">
             <i><img src="/assets/Images/industy/06.svg"/></i>
             <h6>Big Data Management</h6>
@@ -670,26 +668,13 @@
           </p>    
           <div class="core-list" >
               <li class="core-list1">
-                Transparent processes are what we aim at. 
-              </li>
+                Transparent processes are what we aim at</li>
               <!-- <li class="core-list2">
                 We treat our clients like kings. 
               </li> -->
               <li class="core-list3">Our team is our biggest asset as we value our people the most</li>
-              <li class="core-list4">We work together to provide exceptional results.</li>
-              <li class="core-list5">Every day we aim to achieve a new milestone.
-              </li>
-          
-          
-            <!-- <li>  <i class="fas fa-check-square" style="color: #07659D;"></i></i> &ensp; Transparent processes are what we aim at.</li>
-            <li><i class="fas fa-check-square"style="color: #FB8500;"></i> &ensp; We treat our clients like kings.</li>
-            <li><i class="fas fa-check-square"style="color: #53A03C;"></i> &ensp;
-              Our team is our biggest asset, and we value our people the most.
-            </li>
-            <li><i class="fas fa-check-square"style="color: #219EBC;"></i> &ensp; We work together to provide exceptional results.</li>
-            <li><i class="fas fa-check-square"style="color: #FB8500;"></i> &ensp; 
-              Every day we aim to achieve a new milestone we aim to achieve.
-            </li> -->
+              <li class="core-list4">We work together to provide exceptional results</li>
+              <li class="core-list5">Every day we aim to achieve a new milestone</li>
           </div>
         </div>
       </div>
@@ -780,7 +765,7 @@
         <div class="col-lg-3 col-md-3 col-sm-12 col-12">
           <h5>Follow Us</h5>
           <div class="footer-social" style="font-size: 50px;">
-            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.facebook.com/Q3GIndia/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
             <a href=""><i class="fab fa-linkedin"></i></a>
             <a href=""><i class="fab fa-instagram"></i></a>
             <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
@@ -797,15 +782,15 @@
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-<script src="js/main.js"></script>    
+    <script src="jquery/jquery.min.js"></script>
+
+    <script src="sweetalert/sweetalert.js"></script>
+    <script src="js/main.js"></script> 
 <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
-    <!-- <script>
-      AOS.init();
-    </script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
