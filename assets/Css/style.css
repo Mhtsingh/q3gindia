@@ -700,7 +700,7 @@ border-bottom: none;
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 769px){
   .fact .fact-item h2 {
     font-size: 16px;
   }
@@ -750,7 +750,7 @@ border-bottom: none;
   line-height: 33px;
   text-align: justify;
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .mobile-btn {
     background: #07659D;
   border-radius: 6px;
@@ -874,7 +874,7 @@ border-bottom: none;
   font-weight: 600;
   padding: 30px 41px;
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .industry-segment h2 {
   font-size: 30px;
   }
@@ -1432,7 +1432,7 @@ border-bottom: none;
 .why-div-wrap p{
   font-size: 20px;
   line-height: 38px;
-  color: #000;
+  /* color: #000; */
   text-align: justify;
 }
 
@@ -2348,7 +2348,7 @@ padding: 16px 5px;
   margin-top: -12px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 769px){
   .Conatct-card-wrap{
     padding-left: 0;
   }
