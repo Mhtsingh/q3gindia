@@ -94,6 +94,7 @@ body {
   font-size: 16px;
   color: #ffffff;
   border-right: 1px solid rgba(255, 255, 255, 0.15);
+  text-decoration: none;
 }
 
 .top-bar .social a:first-child {
@@ -1094,9 +1095,9 @@ border-bottom: none;
     font-size: 28px;
     letter-spacing: 2px;
   }
-  .item1 h6{
+  /* .item1 h6{
     font-size: 12px;
-  }
+  } */
 }
 
 /* Services segment */
@@ -1525,6 +1526,15 @@ border-bottom: none;
   color: #219ebc;
   transform: scale(1.2);
 }
+.footer-social-linkWrap{
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+.footer-social-linkWrap a{
+  text-decoration: none;
+  color: #fff;
+}
 
 @media (max-width: 992px) {
 
@@ -1783,10 +1793,10 @@ letter-spacing: 0;
 font-size: 25px;
 text-align: initial;
 }
-.box h1 {
-  /* font-size: 25px; */
-  /* left: 23%; */
-}
+/* .box h1 {
+  font-size: 25px;
+  left: 23%;
+} */
 
 .box .description{
   font-weight: 400;

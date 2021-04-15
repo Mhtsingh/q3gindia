@@ -52,8 +52,8 @@
                         <div class="top-bar-right">
                             <div class="social">
                                 <a href="https://www.facebook.com/Q3GIndia/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
-                                <a href=""><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.instagram.com/q3g_inida/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/q3g-india/about/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/q3g_inida/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-2 contact-card-element">
                     <div class="contact-card">
-                    <img src="assets/Images/contact/email.svg">
+                    <img src="assets/Images/contact/Email.svg">
                     <h2>Email</h2>
                     <p>support@q3gindia.com</p>
                     </div>
@@ -207,57 +207,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="Conatct-card-wrap mt-5 mb-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
-                        <div class="contact-card">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img src="assets/Images/contact/Call.png">
-                                </div>
-                                <div class="col-8 contact-card-phone">
-                                    <h2>Phone</h2>
-                                    <p>
-                                        <img src="assets/Images/india.png"> +91-628.088.2955</img>  <br>
-                                        <img src="assets/Images/united-states.png"> +1-916.995.1115</img>         
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
-                        <div class="contact-card">
-                            <div class="row">
-                                <div class="col-lg-4 col-sm-4 col-4 contact-card-img">
-                                    <img src="assets/Images/contact/Email.png">
-                                </div>
-                                <div class="col-lg-8 col-sm-8 col-8 contact-card-email">
-                                    <h2>Email</h2>
-                                    <p>support@q3gindia.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
-                        <div class="contact-card">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img src="assets/Images/contact/location.png">
-                                </div>
-                                <div class="col-8">
-                                    <h2>Address</h2>
-                                    <p>
-                                        Q o  Work
-                                        Sco 19, Madhya Marg, Sector 26, Chandigarh, 160019      
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <!-- Form Start -->
         <div >
             <form action="contact_us.php" method='Post' id='contact_from' name="contact_from" class="form-container " onsubmit="return false" style="background-image: url(/assets/Images/contact/contactus.png);">
@@ -295,6 +244,11 @@
 
                         <textarea class="form-control" id="message" name='message' rows="8" placeholder="What’s in your mind...|"></textarea>
                     </div>
+                      <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LcBoqkaAAAAAA0mtIfgwBAb7jKHNcCwyI4FzktB" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                            <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                            <div class="help-block with-errors"></div>
+                        </div>
                     <button type="submit"  id='btn' name="btn" class="col-lg-4 col-md-4 col-4 btn">SEND MESSAGE</button>
                 </div>
                   
@@ -307,10 +261,10 @@
             <div class="row justify-content-center pt-5 pb-5 footer-div-wrap">
                 <div class="col-lg-3 col-md-3 col-sm-12 col-12" style="list-style: none;">
                     <h5>Contact</h5>
-                    <div>
-                        <li><img src="assets/Images/mail.png"/> support@q3gindia.com</li>
-                        <li><img src="assets/Images/india.png"/> +91-628.088.2955</li>
-                        <li><img src="/assets/Images/united-states.png"/> +1-916.995.1115</li>
+                    <div class="footer-social-linkWrap">
+                        <a href="mailto:support@q3gindia.com"><img src="assets/Images/mail.png"/> support@q3gindia.com</a>
+                        <a><img src="assets/Images/india.png"/> +91-628.088.2955</a>
+                        <a><img src="/assets/Images/united-states.png"/> +1-916.995.1115</a>
                     </div>
                     <br>
                     <h5> Address</h5>
@@ -349,8 +303,8 @@
                     <h5>Follow Us</h5>
                     <div class="footer-social" style="font-size: 50px;">
                         <a href="https://www.facebook.com/Q3GIndia/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
-                        <a href=""><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/q3g_inida/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/q3g-india/about/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/q3g_inida/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                         <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
                     </div>
                 </div>
@@ -365,12 +319,49 @@
        
         <script src="sweetalert/sweetalert.js"></script>
          <script src="js/main.js"></script>
+          <script src='https://www.google.com/recaptcha/api.js'></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
             crossorigin="anonymous"
         ></script> 
+    <script type="text/javascript">
+    $(function () {
 
+    window.verifyRecaptchaCallback = function (response) {
+        $('input[data-recaptcha]').val(response).trigger('change');
+    }
+
+    window.expiredRecaptchaCallback = function () {
+        $('input[data-recaptcha]').val("").trigger('change');
+    }
+
+ 
+    $('#contact-form').on('submit', function (e) {
+        if (!e.isDefaultPrevented()) {
+            var url = "contact.php";
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: $(this).serialize(),
+                success: function (data) {
+                    var messageAlert = 'alert-' + data.type;
+                    var messageText = data.message;
+
+                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                    if (messageAlert && messageText) {
+                        $('#contact-form').find('.messages').html(alertBox);
+                        $('#contact-form')[0].reset();
+                        grecaptcha.reset();
+                    }
+                }
+            });
+            return false;
+        }
+    })
+});
+    </script>
 
     </body>
 </html>
