@@ -12,9 +12,7 @@ body {
   padding: 0;
   background: #07659D;
 }
-/* p{
-  font-size: 18px;
-} */
+
 .vLine {
   border-left: 6px solid #07659D;
   /* height: 118px; */
@@ -155,7 +153,7 @@ body {
   padding: 10px 0;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: ease all 0.3s;
+  transition: ease all 0.5s;
 }
 .drop-down a{
   text-decoration: none;
@@ -366,6 +364,29 @@ input[type=number] {
   margin-left: auto;
 }
 
+.typewriter  {
+  overflow: hidden;
+  border-right: .15em solid #F08104;
+  /* white-space: nowrap;  */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #F08104; }
+}
+
 @media (max-width: 1000px){
 .activeLink{
 border-bottom: none;
@@ -389,6 +410,7 @@ border-bottom: none;
 .page-hero-section {
   position: relative;
   height: 100%;
+
   background-image: url(../Images/Banner.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -417,13 +439,8 @@ border-bottom: none;
 }
 
 .hero_head {
-  /* animation: heading 7s steps(13,end) infinite; */
-  /* overflow: hidden;
-    white-space: nowrap; */
-  /* text-shadow: 2px 2px 4px rgb(175, 191, 219); */
-  /* margin-top: -30px; */
-  color: #F08104;
-  font-size: 61px;
+   color: #F08104;
+  font-size: 4vw;
   font-weight: bolder;
   white-space: nowrap;
 }
@@ -434,14 +451,6 @@ border-bottom: none;
   letter-spacing: 2px;
 }
 
-/* @keyframes heading{
-    0%{
-      width: 0ch;
-    }
-    100%{
-      width: 15ch;
-    }
-  } */
 .hero_para {
   color: #fff;
   font-size: 20px;
@@ -537,6 +546,7 @@ border-bottom: none;
   column-gap: 40px;
 }
 @media only screen and (max-width: 1060px) {
+  
   .hero-caption a{
     display: none;
   }
@@ -552,6 +562,10 @@ border-bottom: none;
   .hero_head {
     white-space: normal;
     font-size: 38px;
+  }
+  .typewriter{
+    animation: none;
+    border-right: none;
   }
   .page-hero-section h2{
     white-space: normal;
@@ -2612,6 +2626,8 @@ margin-top: 5px;
   color: #07659D;
 }
 .sign-text-wrap li{
+  background: url(/assets/Images/Vector.png) no-repeat;
+  padding-left: 2rem;
   list-style: none;
   font-size: 22px;
   font-weight: 500;
