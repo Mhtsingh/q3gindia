@@ -606,19 +606,12 @@ border-bottom: none;
   width: 90%;
   height: 200px;
   margin-bottom: 30px;
-  /* padding: 30px 0 25px 0; */
   text-align: center;
   color: #fff;
-  /* background: #ffffff; */
-  /* border: 1px solid transparent; */
+
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
-
-/* .fact .fact-item:hover {
-  border-color: rgba(0, 0, 0, 0.1);
-  box-shadow: none;
-} */
 
 .fact .fact-item img {
   max-height: 50px;
@@ -648,17 +641,13 @@ border-bottom: none;
   background: #07659D;
   border-radius: 4px;
   padding: 32px 24px;
-  /* margin: 12px; */
   text-decoration: none;
   z-index: 0;
   height: 100%;
   overflow: hidden;
-  /* animation: card1animation 10s infinite; */
-
 }
 .card1 p {
   position: relative;
-  /* padding: 0 10px 0 10px; */
   text-align: justify;
 }
 
@@ -667,17 +656,15 @@ border-bottom: none;
   position: relative;
   align-items: center;
   justify-content: center;
-  /* max-width: 262px; */
+
   background-color: #F08104;
   border-radius: 4px;
   padding: 32px 24px;
-  /* margin: 12px; */
+
   text-decoration: none;
   height: 100%;
   z-index: 0;
   overflow: hidden;
-  /* animation: card2animation 10s infinite; */
-
 }
 .card2 p {
   position: relative;
@@ -685,7 +672,6 @@ border-bottom: none;
   text-align: justify;
 
 }
-
 
 .card3 {
   display: block;
@@ -696,12 +682,9 @@ border-bottom: none;
   background-color: #53A03C;
   border-radius: 4px;
   padding: 32px 24px;
-  
-  /* margin: 12px; */
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
-  animation: card3animation 10s infinite;
 
 }
 .card3 h2{
@@ -713,7 +696,15 @@ border-bottom: none;
   text-align: justify;
 
 }
-
+@media (max-width: 1025px){
+  .fact .fact-item{
+    height: 235px;
+  }
+  .fact .fact-item h2{
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+}
 
 @media (max-width: 769px){
   .fact .fact-item h2 {
@@ -1576,10 +1567,7 @@ border-bottom: none;
 .about-row-item {
   padding: 0 15px 0 15px;
 }
-/* .abt-left-col img {
-  width: 80%;
-  height: 80%;
-} */
+
 .abt-col-web img{
   width: 80%;
   height: 220px;
@@ -1650,6 +1638,9 @@ background-color: #000;
   letter-spacing: 2px;
   font-size: 26px;
 }
+.abt-left-col img {
+  width: 100%;
+}
 .abt-btn2{
   margin-left: 0;
 }
@@ -1662,13 +1653,12 @@ background-color: #000;
 .abt-right-col p {
 font-size: 16px;
 letter-spacing: 0;
+text-align: inherit;
 }
 .abt-right-col h2{
   font-size: 20px;
 }
-/* .abt-left-col img {
-  width: 100%;
-} */
+
 .abt-sol-para{
   font-size: 17px;
 }
@@ -1795,12 +1785,12 @@ letter-spacing: 0;
 .mission-wrap h1{
 font-size: 25px;
 text-align: initial;
+line-height: 30px;
 }
-/* .box h1 {
-  font-size: 25px;
-  left: 23%;
-} */
 
+.mission-wrap img{
+  display: none;
+}
 .box .description{
   font-weight: 400;
   font-size: 15px;
@@ -1917,50 +1907,14 @@ text-align: initial;
 .icon-right3{
   background: url(/assets/Images/ProcessIcons/6.svg) no-repeat right;
 }
-/* .icon-right1 img{
-  float: right;
-  padding: 10px 10px;
-  border: 2px solid;
-  margin-left: 2rem;
-  background: red;
-} */
 
-/* .icon-right1 img:hover{
-  background: none;
-} */
-/* .icon-right2 img{
-  float: right;
-  padding: 10px 10px;
-  border: 2px solid;
-  margin-left: 2rem;
-  background: #FFD426;
-}
-
-.icon-right2 img:hover{
-  background: none;
-}
-.icon-right3 img{
-  float: right;
-  padding: 10px 10px;
-  border: 2px solid;
-  margin-left: 2rem;
-  background: #1CB6F9;
-}
-
-.icon-right3 img:hover{
-  background: none;
-} */
 .pro-text{
   padding-right: 7rem;
 }
 .pro-text h3{
-  /* animation: heading 7s steps(13,end) infinite; */
-  /* overflow: hidden;
-    white-space: nowrap; */
-  /* text-shadow: 2px 2px 4px rgb(175, 191, 219); */
   font-size: 22px;
   font-weight: 700;
-  /* text-align: end; */
+ 
 }
 .pro-text p{
   font-size: 18px;
@@ -1977,7 +1931,7 @@ text-align: initial;
   font-size: 18px;
 }
 
-@media (max-width:1000px)
+@media (max-width:767px)
 {
   .floating-img{
     display: none;
@@ -2521,6 +2475,18 @@ display: block;
 margin-top: 5px;
  } 
 
+ @media (max-width: 1024px)
+ {
+  .team-card {
+    width: 300px;
+  }
+ }
+ @media (max-width: 768px)
+ {
+  .team-card {
+    width: 235px;
+  }
+ }
 /* ************************* */
 .tabs {
   position:relative;
