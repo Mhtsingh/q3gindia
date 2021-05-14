@@ -1638,9 +1638,7 @@ background-color: #000;
   letter-spacing: 2px;
   font-size: 26px;
 }
-.abt-left-col img {
-  width: 100%;
-}
+
 .abt-btn2{
   margin-left: 0;
 }
@@ -2121,6 +2119,7 @@ font-size: 30px;
   color: #07659D;
   font-weight: 800;
 } 
+
 .prt-right-col h4{
   letter-spacing: 2px;
   font-size: 45px;
@@ -2698,13 +2697,16 @@ font-size: 30px;
     font-weight: 400;
   }
   .web-dev-wrap h2{
-    font-size: 60px;
-    font-weight: 700;
-  
+    font-size: 40px;
+    font-weight: 800;
   }
   .web-dev-wrap h2 span{
     color: #07659D;
   }
+  .web-dev-wrap p{
+    font-size: 25px;
+  }
+
   .mob-app-right h2{
     font-size: 40px;
     font-weight: 800;
@@ -2714,12 +2716,25 @@ font-size: 30px;
   }
   .mob-app-right p{
     padding-top: 2rem;
-    font-size: 22px;
+    font-size: 25px;
+  }
+  .mob-app-left h2{
+    padding-top: 2rem;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .mob-app-left h2 span{
+   color: #07659D;
+    
   }
   .mob-app-left p{
     padding-top: 2rem;
-    font-size: 22px;
+    font-size: 25px;
   }
+  .custom-app img{
+    width: 100%;
+  }
+
   .social-div-wrap h2{
     font-size: 40px;
     font-weight: 800;
@@ -2731,32 +2746,26 @@ font-size: 30px;
 
   .social-div h3{
    background: url('/assets/Images/check.svg') no-repeat;
-   padding-left: 2.5rem;
+   padding-left: 6.5rem;
       font-size: 30px;
       font-weight: 700;
+      padding-bottom: 1rem;
   }
   .social-div p{
-   padding-left: 2.5rem;
+   /* padding-top: 1rem; */
     font-size: 22px;
     font-weight: 400;
+    color: #85909B;
   }
-  .rpa-bottom-row blockquote p{
-    color: #1A86FD;
-    font-size: 22px;
-    margin-bottom: 60px;
-    margin-left: 3rem;
-    font-weight: 600;
 
-  }
-  .rpa-bottom-row blockquote i{
-    color: #1A86FD;
-    font-size: 35px;
-  }
 .rpa-list{
-  background: url('/assets/Images/check.svg') no-repeat;
-  padding-left: 3rem;
+  background: url('/assets/Images/rpa/check.svg') no-repeat;
+  padding-left: 4rem;
   font-size: 22px;
   font-weight: 700;
+}
+.rpa-list h3{
+  padding: 8px 0;
 }
 .rpa-top-row h2{
   font-size: 40px;
@@ -2768,4 +2777,52 @@ font-size: 30px;
 .rpa-top-row p{
   padding: 15px 0;
   font-size: 22px;
+}
+
+
+@media (max-width: 1250px){
+  
+  .mob-app-right p{
+    font-size: 20px;
+    padding-top: 0;
+  }
+  .web-dev-wrap h2{
+    font-size: 58px;
+    font-weight: 700;
+  }
+  .web-dev-wrap p{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px){
+  .mob-app-right h2{
+    font-size: 30px;
+  }
+  .mob-app-right p{
+    font-size: 18px;
+    padding-top: 0;
+  }
+  .web-dev-wrap h2{
+    font-size: 30px;
+  }
+  .web-dev-wrap p{
+    font-size: 18px;
+  }
+  .rpa-top-row img{
+    width: 100%;
+  }
+  .abt-left-col img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .col-revv {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .mobile-dev img{
+    width: 100%;
+  }
 }
