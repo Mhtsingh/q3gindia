@@ -288,7 +288,7 @@ body {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: #07659D;
+  background: #F18A17;
   transition: 0.4s;
 }
 
@@ -2893,4 +2893,21 @@ font-size: 30px;
   }
  
 }
+.card-body img{
+  transition: all 0.5s ease-in-out 0s;
+}
+.card-body:hover img{
+  transform: scale(1.1);
+}
 
+.card-body .team-content{
+  background: #fff;
+  position: absolute;
+  bottom: 8px;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: -1;
+
+}
+.card-body:hover .team-content{
+  z-index: 0;
+}
