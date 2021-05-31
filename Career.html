@@ -176,12 +176,12 @@
                         <p class="job-type">FULL TIME</p>
                         <img class="card-img-top" src="assets/Images/career.png" alt="Card image cap">
                         <div class="card-body job-type-body">
-                            <h5 class="card-title">Graphics Design</h5>
+                            <h5 class="card-title">Developer</h5>
                             <p class="card-text">Condimentum penatibus fermentum porttitor
                                 vestibulum feugiat sit dui.</p>
-                            <div class="card-link d-flex justify-content-between">
-                                <a class="btn btn-primary">APPLY NOW</a>
-                                <p class="text mt-2">2 Openings</p>
+                            <div class="card-link d-flex justify-content-between job-apply">
+                              <button class="btn btn-primary tablinks" onclick="openJob(event, 'JobType1')" id="defaultOpen">APPLY NOW</button>
+                              <p class="text mt-2">2 Openings</p>
                             </div>
                         </div>
                     </div>
@@ -191,11 +191,11 @@
                         <p class="job-type">FULL TIME</p>
                         <img class="card-img-top" src="assets/Images/career.png" alt="Card image cap">
                         <div class="card-body job-type-body">
-                            <h5 class="card-title">Graphics Design</h5>
+                            <h5 class="card-title">Graphics Designer</h5>
                             <p class="card-text">Condimentum penatibus fermentum porttitor
                                 vestibulum feugiat sit dui.</p>
-                            <div class="card-link d-flex justify-content-between">
-                                <a class="btn btn-primary">APPLY NOW</a>
+                            <div class="card-link d-flex justify-content-between job-apply">
+                              <button class="btn btn-primary tablinks" onclick="openJob(event, 'JobType2')">APPLY NOW</button>
                                 <p class="text mt-2">2 Openings</p>
                             </div>
                         </div>
@@ -206,11 +206,11 @@
                         <p class="job-type">FULL TIME</p>
                         <img class="card-img-top" src="assets/Images/career.png" alt="Card image cap">
                         <div class="card-body job-type-body">
-                            <h5 class="card-title">Graphics Design</h5>
+                            <h5 class="card-title">SEO</h5>
                             <p class="card-text">Condimentum penatibus fermentum porttitor
                                 vestibulum feugiat sit dui.</p>
-                            <div class="card-link d-flex justify-content-between">
-                                <a class="btn btn-primary">APPLY NOW</a>
+                            <div class="card-link d-flex justify-content-between job-apply">
+                              <button class="btn btn-primary tablinks" onclick="openJob(event, 'JobType3')" id="defaultOpen">APPLY NOW</button>
                                 <p class="text mt-2">2 Openings</p>
                             </div>
                         </div>
@@ -221,25 +221,25 @@
                         <p class="job-type">FULL TIME</p>
                         <img class="card-img-top" src="assets/Images/career.png" alt="Card image cap">
                         <div class="card-body job-type-body">
-                            <h5 class="card-title">Graphics Design</h5>
+                            <h5 class="card-title">Product Manager</h5>
                             <p class="card-text">Condimentum penatibus fermentum porttitor
                                 vestibulum feugiat sit dui.</p>
-                            <div class="card-link d-flex justify-content-between">
-                                <a class="btn btn-primary">APPLY NOW</a>
-                                <p class="text mt-2">2 Openings</p>
+                            <div class="card-link d-flex justify-content-between job-apply">
+                              <button class="btn btn-primary tablinks" onclick="openJob(event, 'JobType4')" id="defaultOpen">APPLY NOW</button>
+                              <p class="text mt-2">2 Openings</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="my-4" style="background: #f8f8f8;">
+      </section>
+      
+      <section class="my-4" style="background: #f8f8f8;">
         <div class="container py-5" >
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 border-right">
                     <div class="form-head-text">
-                        <div class="hLine"></div>
                         <h3>APPLICATION</h3>
                         <h1>Send Your Resume</h1>
                         <p>
@@ -278,7 +278,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <select class="form-control" id="totalExperience">
-                                        <option disabled>Years</option>
+                                        <option >Years</option>
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -289,25 +289,26 @@
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <select class="form-control" id="totalExperience">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                    <select class="form-control" id="sel1">
+                                        <option >Months </option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
                                     </select>
-                                </div>
+                                  </div>
                             </div>
                         </div>
                         <div class="form-group row mt-3">
                             <label for="formUplaod" class="col-sm-2 col-form-label">Upload Resume*</label>
-                            <div class="col-sm-10 d-flex custom-file">
+                            <div class="col-sm-10 custom-file">
+                                <div class="file-upload-wrapper" data-text="Select your file!">
                                 <input class="form-control" type="file" id="formFile" accept=".doc, .docx, .pdf">
+                                  </div>
+                                  <small class="form-text text-danger">Files type should be : Doc or Pdf or Docx
+                                    only. Must have
+                                    size less than 5 MB</small>
                             </div>
-                            
-                            <small id="" class="col-10 form-text text-muted">Files type should be : Doc or Pdf or Docx
-                                only. Must have
-                                size less than 5 MB</small>
                         </div>
                         <div class="form-group">
                             <div class="g-recaptcha" data-sitekey="6LcBoqkaAAAAAA0mtIfgwBAb7jKHNcCwyI4FzktB"
@@ -321,13 +322,12 @@
                         <button class="btn submit-btn mt-5" type="submit">Submit Now</button>
                     </form>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div id="jd-tab-1" role="tabpanel" aria-labelledby="jd-tab-1">
-                        <div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 tabcontent-wrap">
+                  <div id="JobType1" class="tabcontent">
+                    <div class="job-title">
                             <h4>Job Position</h4>
                             <li>Sr. Developer</li>
-                        </div>
-                        <div>
+                            <br>
                             <h4>Experience</h4>
                             <li>5-7 Years</li>
                             <li>Microservices & N-tier & MVC based system architecture & design Service oriented
@@ -338,12 +338,44 @@
                                 architecture .NET Core, MS-SQL, RESTFul APIs, WebAPIs, JavaScript, JQuery, …</li>
                         </div>
                     </div>
-                    <div id="jd-tab-2" role="tabpanel" aria-labelledby="jd-tab-2">
-                        <div>
+      
+                    <div id="JobType2" class="tabcontent">
+                      <div class="job-title">
                             <h4>Job Position</h4>
-                            <li>Sr. Developer</li>
+                            <li>Designer</li>
+                            <br>
+                            <h4>Experience</h4>
+                            <li>5-7 Years</li>
+                            <li>Microservices & N-tier & MVC based system architecture & design Service oriented
+                                architecture Implementation of design patterns Multitenant architecture for SAAS based
+                                solutions Complex relational database design with highly normalized design
+                                Implementation of
+                                solution over cloud platforms like, AWS, Azure, GCP Object oriented design for scalable
+                                architecture .NET Core, MS-SQL, RESTFul APIs, WebAPIs, JavaScript, JQuery, …</li>
                         </div>
-                        <div>
+                    </div>
+      
+                    <div id="JobType3" class="tabcontent">
+                      <div class="job-title">
+                            <h4>Job Position</h4>
+                            <li>SEO</li>
+                            <br>
+                            <h4>Experience</h4>
+                            <li>5-7 Years</li>
+                            <li>Microservices & N-tier & MVC based system architecture & design Service oriented
+                                architecture Implementation of design patterns Multitenant architecture for SAAS based
+                                solutions Complex relational database design with highly normalized design
+                                Implementation of
+                                solution over cloud platforms like, AWS, Azure, GCP Object oriented design for scalable
+                                architecture .NET Core, MS-SQL, RESTFul APIs, WebAPIs, JavaScript, JQuery, …</li>
+                        </div>
+                    </div>
+      
+                    <div id="JobType4" class="tabcontent">
+                      <div class="job-title">
+                            <h4>Job Position</h4>
+                            <li>Product Manager</li>
+                            <br>
                             <h4>Experience</h4>
                             <li>5-7 Years</li>
                             <li>Microservices & N-tier & MVC based system architecture & design Service oriented
@@ -357,7 +389,9 @@
                 </div>
             </div>
         </div>
-    </section>
+      </section>
+   
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white">
@@ -421,11 +455,9 @@
 
     <script src="sweetalert/sweetalert.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+ 
         AOS.init();
     </script>
 
